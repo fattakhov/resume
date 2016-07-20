@@ -8,6 +8,8 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
+    ::-moz-selection { background: yellow; }
+    ::selection { background: yellow; }
     body {
       font-size: 62.5%;
       font-family: Montserrat;
