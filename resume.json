@@ -1,0 +1,111 @@
+{
+  "basics": {
+    "name": "Mansur Fattakhov",
+    "label": "Developer",
+    "picture": "",
+    "email": "contact@fattakhoff.com",
+    "phone": "(917) 914-0708",
+    "website": "http://fattakhoff.com",
+    "summary": "My name is Mansur. Im a web developer with 5+ years experience in web development. My strongest skill is backend development. I used to work on projects from small web portals to enterprise solutions. Main frameworks I use in my everyday work is RubyOnRails. I have good experience in frontend development too. In my career I have tried many tools and I love to study and implement new frameworks and solutions in my work.",
+    "location": {
+      "city": "Kazan",
+      "countryCode": "Russian Fed."
+    },
+    "profiles": [{
+      "network": "Github",
+      "username": "fattakhov",
+      "url": "https://github.com/fattakhov"
+    }, {
+      "network": "Bitbucket",
+      "username": "mfattakhov",
+      "url": "https://bitbucket.org/mfattakhov"
+    }, {
+      "network": "Linkedin",
+      "username": "Mansur Fattakhov",
+      "url": "https://www.linkedin.com/profile/view?id=AAIAAArAGkoBLXW4CpwkdFauRyWvYjazG9dEQyY&trk=nav_responsive_tab_profile"
+    }, {
+      "network": "Stackoverflow",
+      "username": "mansur-fattakhov",
+      "url": "https://stackoverflow.com/users/1697919/mansur-fattakhov"
+    }]
+  },
+  "work": [{
+    "company": "BARS Group",
+    "position": "Developer/Team lead",
+    "website": "http://bars-open.ru",
+    "startDate": "2011-01-12",
+    "endDate": "2014-01-04",
+    "summary": "As a lead developer I used to work on different web registry systems. We used Python/Django and ExtJS",
+    "highlights": [
+      "Accounting systems development",
+      "Backend development (Python/Django)",
+      "Frontend development (JS/ExtJS)",
+      "Solving the problems according agile methodology"
+    ]
+  }, {
+    "company": "ITS Digital agency",
+    "position": "CTO",
+    "website": "http://itsl.ru",
+    "startDate": "2014-01-04",
+    "endDate": "2016-01-01",
+    "summary": "ITS agency is a company that provides full support of business on the Internet. As CTO I've been developing web services, portals and took care for uninterrupted development cycle.",
+    "highlights": [
+      "RubyOnRails projects development",
+      "PHP projects development",
+      "Frontend development (sass, gulp, grunt, backbonejs)",
+      "Development team management"
+    ]
+  }],
+  "education": [{
+    "institution": "Kazan State University",
+    "area": "Сomputational mathematics and cybernetics",
+    "studyType": "Specialist",
+    "startDate": "2007-01-09",
+    "endDate": "2012-01-06",
+    "gpa": "4.5/5"
+  }],
+  "skills": [{
+    "name": "Backend development",
+    "level": "Master",
+    "keywords": [
+      "Ruby/RubyOnRails",
+      "Python/Django",
+      "PHP"
+    ]
+  }, {
+    "name": "Frontend development",
+    "level": "Master",
+    "keywords": [
+      "BackboneJS",
+      "AngularJS",
+      "SASS",
+      "LESS",
+      "Gulp",
+      "Grunt",
+      "HTML5",
+      "CSS3"
+    ]
+  }, {
+    "name": "Databases",
+    "level": "Master",
+    "keywords": [
+      "Postgresql",
+      "Mysql"
+    ]
+  }],
+  "languages": [{
+    "name": "Russian",
+    "level": "Native speaker"
+  }, {
+    "name": "English",
+    "level": "Read/Write"
+  }],
+  "interests": [{
+    "name": "Interests",
+    "keywords": [
+      "Family",
+      "Self-development",
+      "Sport"
+    ]
+  }]
+}
