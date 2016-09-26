@@ -9,10 +9,10 @@ fs.writeFile('resume.html', theme.render(res));
 console.log("Wrote.");
 
 function render() {
-	try {
-		return theme.render(res);
-	} catch(e) {
-		console.log("Error: " + e.message);
-		return "";
-	}
+    try {
+        return theme.render(res);
+    } catch (e) {
+        console.log("Error: " + e.message);
+        return "";
+    }
 }
