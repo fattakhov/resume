@@ -224,6 +224,26 @@
       {{/work}}
     </div>
     {{/workBool}}
+
+    <div id= "projects">
+      <h2><i class= "fa fa-briefcase left"></i> Projects</h2>
+        <div class= "job">
+          <h3><a href="http://visit-tatarstan.com" target="_blank">Tourism portal</a></h3>
+          <h4>2014-2015</h4>
+          <!-- <p></p> -->
+        </div>
+        <div class= "job">
+          <h3><a href="http://auction.edelveis.ru" target="_blank">Online trading platform</a></h3>
+          <h4>2013</h4>
+          <!-- <p></p> -->
+        </div>
+        <div class= "job">
+          <h3><a href="http://izi-trade.ru" target="_blank">Game currency trading platform</a></h3>
+          <h4>2016</h4>
+          <!-- <p></p> -->
+        </div>
+    </div>
+
     {{#volunteerBool}}
     <div id= "volunteer">
       <h2><i class= "fa fa-child left"></i> VOLUNTEER WORK</h2>
@@ -322,7 +342,7 @@
       {{/references}}
     </div>
     {{/referencesBool}}
-
+    
   </div>
   </body>
 </html>

@@ -29,6 +29,15 @@
       "url": "https://stackoverflow.com/users/1697919/mansur-fattakhov"
     }]
   },
+  "projects": [{
+    "name": "name1",
+    "homepage": "homepage1",
+    "description": "description1"
+  }, {
+    "name": "name2",
+    "homepage": "homepage2",
+    "description": "description2"
+  }],
   "work": [{
     "company": "BARS Group",
     "position": "Developer/Team lead",
@@ -58,7 +67,7 @@
   }],
   "education": [{
     "institution": "Kazan State University",
-    "area": "Сomputational mathematics and cybernetics",
+    "area": "Computational mathematics and cybernetics",
     "studyType": "Specialist",
     "startDate": "2007-01-09",
     "endDate": "2012-01-06",
