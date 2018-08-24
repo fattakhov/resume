@@ -1,0 +1,25 @@
+{
+  "name": "resume",
+  "version": "0.0.1",
+  "description": "personal resume",
+  "main": "\\",
+  "scripts": {
+    "build": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mansur fattakhov",
+  "license": "ISC",
+  "devDependencies": {
+    "font-awesome": "4.7.0",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "5.0.0",
+    "gulp-concat": "2.6.1",
+    "gulp-minify-css": "1.2.4",
+    "gulp-sass": "4.0.1",
+    "gulp-sourcemaps": "2.6.4",
+    "gulp-uglify": "3.0.1",
+    "gulp-watch": "5.0.1",
+    "normalize.css": "8.0.0"
+  },
+  "dependencies": {}
+}
