@@ -4,6 +4,7 @@ var minifyCSS = require('gulp-minify-css');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
+var livereload = require('gulp-livereload');
 
 gulp.task('html', function(){
   return gulp.src('src/*.html')
@@ -27,6 +28,7 @@ gulp.task('js', function(){
 });
 
 gulp.task('watch', function() {
+  livereload.listen();
   gulp.watch('src/js/*.js', ['js']);
   gulp.watch('src/scss/*.scss', ['css']);
   gulp.watch('src/*.html', ['html']);

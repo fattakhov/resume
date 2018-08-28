@@ -1,2 +1,160 @@
 @import "node_modules/normalize.css/normalize";
-//@import "node_modules/font-awesome/scss/font-awesome";
+@import "node_modules/font-awesome/scss/variables";
+
+$fa-font-path: "../../node_modules/font-awesome/fonts";
+
+@import "node_modules/font-awesome/scss/path";
+
+::selection {
+    background: yellow;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 1.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+header {
+    text-align: center;
+
+    .header {
+        &__contacts {
+            margin-bottom: 2rem;
+            &__phone {
+                font-size: 1.2rem;
+                &__title {
+                    text-transform: uppercase;
+                    &:after {
+                        content: '•';
+                    }
+                }
+                &__info {
+                }
+            }
+            &__email {
+                font-size: 1.2rem;
+                &__title {
+                    text-transform: uppercase;
+                    &:after {
+                        content: '•';
+                    }
+                }
+                &__info a {
+                    text-decoration: none;
+                }
+            }
+            &__website {
+                font-size: 1.2rem;
+                &__title {
+                    text-transform: uppercase;
+                    &:after {
+                        content: '•';
+                    }
+                }
+                &__info a {
+                    text-decoration: none;
+                }
+            }
+        
+        }
+        &__profiles {
+            &__title {
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                margin-bottom: 2rem;
+            }
+            &__github {
+                font-size: 1rem;
+                &:before { font-family: FontAwesome; content: $fa-var-user; margin-right: 5px;}
+            }
+            &__bitbucket {
+                font-size: 1rem;
+                &:before { font-family: FontAwesome; content: $fa-var-user; margin-right: 5px;}
+            }
+            &__linkedin {
+                font-size: 1rem;
+                &:before { font-family: FontAwesome; content: $fa-var-user; margin-right: 5px;}
+            }
+            &__stackoverflow {
+                font-size: 1rem;
+                &:before { font-family: FontAwesome; content: $fa-var-user; margin-right: 5px;  }
+            }
+        }
+    }
+}
+section {
+    margin: 0 10%;
+    & h3:before {
+        margin-right: 10px;
+        font-family: FontAwesome, serif;
+    }
+}
+.about {
+    &__title {
+        font-size: 1.75rem;
+        &:before {
+            content: $fa-var-user;
+        }
+    }
+}
+
+.work-expirience {
+    &__title:before {
+        &__title {
+        font-size: 1.75rem;
+        &:before {
+            content: $fa-var-user;
+        }
+    }
+        content: $fa-var-suitcase;
+    }
+}
+
+.projects {
+    &__title:before {
+        &__title {
+        font-size: 1.75rem;
+        &:before {
+            content: $fa-var-user;
+        }
+    }
+        content: $fa-var-briefcase;
+    }
+}
+
+.skills {
+    &__title:before {
+        &__title {
+        font-size: 1.75rem;
+        &:before {
+            content: $fa-var-user;
+        }
+    }
+        content: $fa-var-tasks;
+    }
+}
+
+.education {
+    &__title:before {
+        &__title {
+        font-size: 1.75rem;
+        &:before {
+            content: $fa-var-user;
+        }
+    }
+        content: $fa-var-graduation-cap;
+    }
+}
