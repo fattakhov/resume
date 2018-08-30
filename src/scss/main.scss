@@ -9,6 +9,7 @@ $fa-font-path: "../../node_modules/font-awesome/fonts";
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
+    margin-bottom: 50px;
 }
 
 a {
@@ -36,6 +37,7 @@ h2 {
     margin-top: 0.5rem;
     margin-bottom: 3rem;
 }
+
 h3 {
     font-size: 1.75rem;
 }
@@ -112,61 +114,89 @@ section {
     p {
         font-size: 1rem;
     }
-}
-
-.about {
-    &__title {
-        font-size: 1.75rem;
-        &:before {
-            content: $fa-var-user;
-        }
-    }
-}
-
-.work-expirience {
-    &__title:before {
+    .about {
         &__title {
             font-size: 1.75rem;
             &:before {
                 content: $fa-var-user;
             }
         }
-        content: $fa-var-suitcase;
     }
-}
-
-.projects {
-    &__title:before {
-        &__title {
-            font-size: 1.75rem;
-            &:before {
-                content: $fa-var-user;
+    .work-expirience {
+        &__title:before {
+            content: $fa-var-suitcase;
+        }
+        &__item {
+            font-size: 1rem;
+            &__title {
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+            &__dates {
+                font-size: 0.9rem;
+                font-weight: bold;
+            }
+            &__description {
+                margin: 20px 0;
+            }
+            &__highlights {
+                span {
+                    font-weight: bold;
+                }
             }
         }
-        content: $fa-var-briefcase;
     }
-}
-
-.skills {
-    &__title:before {
-        &__title {
-            font-size: 1.75rem;
-            &:before {
-                content: $fa-var-user;
+    .projects {
+        &__title:before {
+            content: $fa-var-briefcase;
+        }
+        &__item {
+            margin: 10px 0;
+            font-weight: bold;
+            &__title {
+                a {
+                    font-size: 1.3rem;
+                }
+            }
+            &__dates {
+                font-size: 1rem;
             }
         }
-        content: $fa-var-tasks;
     }
-}
-
-.education {
-    &__title:before {
-        &__title {
-            font-size: 1.75rem;
-            &:before {
-                content: $fa-var-user;
+    .skills {
+        &__title:before {
+            content: $fa-var-tasks;
+        }
+        &__item {
+            &__title {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            ul {
+                padding-left: 0;
+                list-style: none;
+                li {
+                    display: inline-block;
+                    padding: 5px;
+                    background: black;
+                    color: white;
+                }
             }
         }
-        content: $fa-var-graduation-cap;
+    }
+    .education {
+        &__title:before {
+            content: $fa-var-graduation-cap;
+        }
+        &__item {
+            font-size: 1rem;
+            font-weight: bold;
+            &__title {
+                font-size: 1.1rem;
+            }
+            &__dates {
+                font-size: 0.9rem;
+            }
+        }
     }
 }
