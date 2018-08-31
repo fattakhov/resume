@@ -4,6 +4,7 @@
   "description": "personal resume",
   "main": "\\",
   "scripts": {
+    "build": "gulp",
     "postinstall": "gulp",
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,6 +16,7 @@
     "gulp": "3.9.1",
     "gulp-autoprefixer": "5.0.0",
     "gulp-concat": "2.6.1",
+    "gulp-html-pdf": "0.3.0",
     "gulp-livereload": "3.8.1",
     "gulp-minify-css": "1.2.4",
     "gulp-sass": "4.0.1",

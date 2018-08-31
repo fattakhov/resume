@@ -10,15 +10,173 @@
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans" rel="stylesheet">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <link rel="stylesheet" href="css/app.min.css">
+
+  <style>
+    ::selection {
+      background: yellow;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      margin-bottom: 25px;
+    }
+
+    a {
+      color: gray;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: white;
+      background-color: black;
+    }
+
+    h1,
+    h2,
+    h3 {
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 0.8rem;
+      margin-top: 0.3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      font-size: 0.8rem;
+    }
+
+    header .header__contacts ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 1rem;
+    }
+
+    header .header__contacts ul>li {
+      font-size: 0.6rem;
+    }
+
+    header .header__contacts__title {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    header .header__contacts__title:after {
+      content: '•';
+      margin-left: 2.5px;
+    }
+
+    header .header__profiles__title {
+      text-transform: uppercase;
+      font-size: 0.6rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    header .header__profiles ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    header .header__profiles ul>li {
+      font-size: 0.6rem;
+    }
+
+    section {
+      margin: 0;
+    }
+
+    section h3:before {
+      margin-right: 5px;
+      font-family: FontAwesome, serif;
+    }
+
+    section p {
+      font-size: 0.5rem;
+    }
+
+    section .about__title {
+      font-size: 0.8rem;
+    }
+
+
+    section .work-expirience__item {
+      font-size: 0.5rem;
+    }
+
+    section .work-expirience__item__title {
+      font-size: 0.6rem;
+      font-weight: bold;
+    }
+
+    section .work-expirience__item__dates {
+      font-size: 0.5rem;
+      font-weight: bold;
+    }
+
+    section .work-expirience__item__description {
+      margin: 10px 0;
+    }
+
+    section .work-expirience__item__highlights span {
+      font-weight: bold;
+    }
+
+    section .projects__item {
+      margin: 5px 0;
+      font-weight: bold;
+    }
+
+    section .projects__item__title a {
+      font-size: 0.6rem;
+    }
+
+    section .projects__item__dates {
+      font-size: 0.5rem;
+    }
+
+    section .skills__item__title {
+      font-size: 0.5rem;
+      font-weight: bold;
+    }
+
+    section .skills__item ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    section .skills__item ul li {
+      display: inline-block;
+      padding: 2.5px;
+      background: black;
+      color: white;
+      font-size: 0.5rem;
+      margin-top: 2px;
+    }
+
+    section .education__item {
+      font-size: 0.5rem;
+      font-weight: bold;
+    }
+
+    section .education__item__title {
+      font-size: 0.6rem;
+    }
+
+    section .education__item__dates {
+      font-size: 0.5rem;
+    }
+  </style>
 </head>
 
 <body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a target='_blank' href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
   <header>
     <h1>Mansur Fattakhov</h1>
     <h2>full stack web developer</h2>
@@ -44,27 +202,13 @@
         </li>
       </ul>
     </div>
-    <div class="header__profiles">
-      <div class="header__profiles__title">profiles</div>
-      <ul>
-        <li class="header__profiles__github">
-          <a target='_blank' href="https://github.com/fattakhov">Github</a>
-        </li>
-        <li class="header__profiles__bitbucket">
-          <a target='_blank' href="https://bitbucket.org/mfattakhov">Bitbucket</a>
-        </li>
-        <li class="header__profiles__linkedin">
-          <a target='_blank' href="https://www.linkedin.com/profile/view?id=AAIAAArAGkoBLXW4CpwkdFauRyWvYjazG9dEQyY&trk=nav_responsive_tab_profile">LinkedIn</a>
-        </li>
-        <li class="header__profiles__stackoverflow">
-          <a target='_blank' href="https://stackoverflow.com/users/1697919/mansur-fattakhov">Stackoverflow</a>
-        </li>
-      </ul>
-    </div>
   </header>
   <section class="about">
     <h3 class="about__title">About</h3>
-    <p>My name is Mansur. Im a web developer with 7+ years experience in web development. My strongest skill is backend development. I used to work on projects from small web portals to enterprise solutions. Main languages/frameworks I use in my everyday work are Ruby/RubyOnRails, Python, JS. I have good experience in frontend development too. In my career I have tried many tools and I love to study and implement new frameworks and solutions in my work.</p>
+    <p>My name is Mansur. Im a web developer with 7+ years experience in web development. My strongest skill is backend development.
+      I used to work on projects from small web portals to enterprise solutions. Main languages/frameworks I use in my everyday
+      work are Ruby/RubyOnRails, Python, JS. I have good experience in frontend development too. In my career I have tried
+      many tools and I love to study and implement new frameworks and solutions in my work.</p>
   </section>
   <section class="work-expirience">
     <h3 class="work-expirience__title">Work Expirience</h3>
@@ -72,7 +216,8 @@
     <div class="work-expirience__item">
       <div class="work-expirience__item__title">Fullstack Software Engeneer, Tensor</div>
       <div class="work-expirience__item__dates">October 2016 - now</div>
-      <div class="work-expirience__item__description">As the team leader, I was responsible for the development of the functional section by me and my team. In the development we`re using python3, sql(postgresql) and js.</div>
+      <div class="work-expirience__item__description">As the team leader, I was responsible for the development of the functional section by me and my team. In the development
+        we`re using python3, sql(postgresql) and js.</div>
       <div class="work-expirience__item__highlights">
         <span>HIGHLIGHTS</span>
         <ul>
@@ -87,7 +232,8 @@
     <div class="work-expirience__item">
       <div class="work-expirience__item__title">CTO, ITS Digital agency</div>
       <div class="work-expirience__item__dates">January 2014 - September 2016</div>
-      <div class="work-expirience__item__description">ITS agency is a company that provides full support of business on the Internet. As CTO I've been developing web services, portals and took care for uninterrupted development cycle.</div>
+      <div class="work-expirience__item__description">ITS agency is a company that provides full support of business on the Internet. As CTO I've been developing web services,
+        portals and took care for uninterrupted development cycle.</div>
       <div class="work-expirience__item__highlights">
         <span>HIGHLIGHTS</span>
         <ul>
@@ -116,15 +262,21 @@
   <section class="projects">
     <h3 class="projects__title">Projects</h3>
     <div class="projects__item">
-      <div class="projects__item__title"><a target='_blank' href="https://visit-tatarstan.com/">Tourism portal</a></div>
+      <div class="projects__item__title">
+        <a target='_blank' href="https://visit-tatarstan.com/">Tourism portal (visit-tatarstan.com)</a>
+      </div>
       <div class="projects__item__dates">2014-2015</div>
     </div>
     <div class="projects__item">
-      <div class="projects__item__title"><a target='_blank' href="http://auction.edelveis.ru/">Online trading platform</a></div>
+      <div class="projects__item__title">
+        <a target='_blank' href="http://auction.edelveis.ru/">Online trading platform (auction.edelveis.ru)</a>
+      </div>
       <div class="projects__item__dates">2013</div>
     </div>
     <div class="projects__item">
-      <div class="projects__item__title"><a target='_blank' href="https://izi-trade.ru/">Game currency trading platform</a></div>
+      <div class="projects__item__title">
+        <a target='_blank' href="https://izi-trade.ru/">Game currency trading platform (izi-trade.ru)</a>
+      </div>
       <div class="projects__item__dates">2016</div>
     </div>
   </section>
@@ -162,10 +314,6 @@
       <div class="education__item__gpa">GPA: 4.5/5</div>
     </div>
   </section>
-  <footer>
-  </footer>
-
-  <script src="js/app.min.js"></script>
 </body>
 
 </html>

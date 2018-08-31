@@ -1,24 +1,37 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var minifyCSS = require('gulp-minify-css');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var sourcemaps = require('gulp-sourcemaps');
-var livereload = require('gulp-livereload');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const minifyCSS = require('gulp-minify-css');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const sourcemaps = require('gulp-sourcemaps');
+const livereload = require('gulp-livereload');
+const pdf = require('gulp-html-pdf')
 
-gulp.task('html', function(){
-  return gulp.src('src/*.html')
+gulp.task('html', () =>{
+  return gulp.src('src/index.html')
     .pipe(gulp.dest('build'))
 });
 
-gulp.task('css', function(){
+gulp.task('pdf', () =>{
+  return gulp.src('src/pdf.html')
+    .pipe(pdf())
+    .pipe(gulp.dest('build'))
+});
+
+gulp.task('sass', () =>{
   return gulp.src('src/scss/*.scss')
     .pipe(sass())
+    .pipe(gulp.dest('build/css'))
+});
+
+gulp.task('css-min', ['sass'], () =>{
+  return gulp.src('build/css/*.css')
+    .pipe(concat('app.min.css'))
     .pipe(minifyCSS())
     .pipe(gulp.dest('build/css'))
 });
 
-gulp.task('js', function(){
+gulp.task('js', () =>{
   return gulp.src('src/js/*.js')
     .pipe(sourcemaps.init())
     .pipe(uglify())
@@ -27,11 +40,11 @@ gulp.task('js', function(){
     .pipe(gulp.dest('build/js'))
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', () => {
   livereload.listen();
   gulp.watch('src/js/*.js', ['js']);
   gulp.watch('src/scss/*.scss', ['css']);
   gulp.watch('src/*.html', ['html']);
 });
 
-gulp.task('default', [ 'html', 'css', 'js' ]);
+gulp.task('default', [ 'html', 'sass', 'css-min', 'js', 'pdf' ]);
