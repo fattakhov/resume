@@ -34,4 +34,4 @@ gulp.task('watch', function() {
   gulp.watch('src/*.html', ['html']);
 });
 
-gulp.task('default', [ 'html', 'css', 'js', 'watch' ]);
+gulp.task('default', [ 'html', 'css', 'js' ]);
