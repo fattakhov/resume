@@ -4,7 +4,8 @@
   "description": "personal resume",
   "main": "\\",
   "scripts": {
-    "build": "",
+    "postinstall": "gulp",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "mansur fattakhov",
