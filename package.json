@@ -12,7 +12,6 @@
   "author": "mansur fattakhov",
   "license": "ISC",
   "devDependencies": {
-    "font-awesome": "4.7.0",
     "gulp": "3.9.1",
     "gulp-autoprefixer": "5.0.0",
     "gulp-concat": "2.6.1",
@@ -22,10 +21,11 @@
     "gulp-sass": "4.0.1",
     "gulp-sourcemaps": "2.6.4",
     "gulp-uglify": "3.0.1",
-    "gulp-watch": "5.0.1",
-    "normalize.css": "8.0.0"
+    "gulp-watch": "5.0.1"
   },
   "dependencies": {
+    "normalize.css": "8.0.0",
+    "font-awesome": "4.7.0",
     "express": "4.16.3"
   }
 }
