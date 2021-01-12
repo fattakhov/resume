@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{basics.name}}`s resume</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a target='_blank' href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <header>
+    <h1>{{basics.name}}</h1>
+    <h2>{{basics.label}}</h2>
+    <div class="header__contacts">
+      <ul>
+        <li>
+          <span class="header__contacts__title">email</span>
+          <span class="header__contacts__info">
+            <a target='_blank' href="mailto:{{basics.email}}">{{basics.email}}</a>
+          </span>
+        </li>
+        <li>
+          <span class="header__contacts__title">phone</span>
+          <span class="header__contacts__info">
+            <a target='_blank' href="tel:{{basics.phone}}">{{basics.phone}}</a>
+          </span>
+        </li>
+        <li>
+          <span class="header__contacts__title">website</span>
+          <span class="header__contacts__info">
+            <a target='_blank' href="{{basics.website}}">{{basics.website}}</a>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class="header__profiles">
+      <div class="header__profiles__title">profiles</div>
+      <ul>
+        {{#basics.profiles}}
+        <li class="header__profiles__{{icon}}">
+          <a target='_blank' href="{{url}}">{{network}}</a>
+        </li>
+        {{/basics.profiles}}
+      </ul>
+    </div>
+  </header>
+  <a class="download-resume" href="/resume.pdf">You can download this resume, if you need it</a>
+  <section class="about">
+    <h3 class="about__title">About</h3>
+    <p>{{basics.summary}}</p>
+  </section>
+  <section class="work-expirience">
+    <h3 class="work-expirience__title">Work Expirience</h3>
+    {{#work}}
+      <div class="work-expirience__item">
+        <div class="work-expirience__item__title">{{position}}, {{company}}</div>
+        <div class="work-expirience__item__dates">{{startDate}} - {{endDate}}</div>
+        <div class="work-expirience__item__description">{{summary}}</div>
+        <div class="work-expirience__item__highlights">
+          <span>HIGHLIGHTS</span>
+          <ul>
+            {{#highlights}}
+              <li>{{.}}</li>
+            {{/highlights}}
+          </ul>
+        </div>
+      </div>
+    {{/work}}
+  </section>
+  <section class="certifications">
+    <h3 class="certifications__title">Certifications</h3>
+    {{#certifications}}
+    <div class="certifications__item">
+      <div class="certifications__item__title"><a target='_blank' href="{{url}}">{{title}}</a></div>
+      <div class="certifications__item__dates">{{dates}}</div>
+    </div>
+    {{/certifications}}
+  </section>
+  <section class="skills">
+    <h3 class="skills__title">Skills</h3>
+    <div class="skills__item">
+      {{#skills}}
+        <div class="skills__item__title">{{name}}</div>
+        <ul>
+          {{#keywords}}
+            <li>{{.}}</li>
+          {{/keywords}}
+        </ul>
+      {{/skills}}
+    </div>
+  </section>
+  <section class="education">
+    <h3 class="education__title">Education</h3>
+    {{#education}}
+    <div class="education__item">
+      <div class="education__item__title">{{studyType}}, {{area}} - {{institution}}</div>
+      <div class="education__item__dates">{{startDate}} – {{endDate}}</div>
+      <div class="education__item__gpa">GPA: {{gpa}}</div>
+    </div>
+    {{/education}}
+  </section>
+  <footer>
+  </footer>
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

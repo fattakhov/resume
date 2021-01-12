@@ -6,15 +6,33 @@ const uglify = require('gulp-uglify');
 const sourcemaps = require('gulp-sourcemaps');
 const livereload = require('gulp-livereload');
 const pdf = require('gulp-html-pdf')
+const mustache = require('mustache')
+const resumeJson = require('./src/resume.json')
+const through = require('through2')
+const rename = require("gulp-rename")
 
 gulp.task('html', () =>{
-  return gulp.src('src/index.html')
+  return gulp.src('src/index.template')
+    .pipe(
+      through.obj((file, enc, cb) => {
+        var template = file.contents.toString()
+        file.contents = Buffer.from(mustache.render(template, resumeJson))
+        cb(null, file)
+      }
+    ))
+    .pipe(rename('index.html'))
     .pipe(gulp.dest('build'))
 });
 
 gulp.task('pdf', () =>{
-  return gulp.src('src/pdf.html')
+  return gulp.src('src/pdf.template')
+    .pipe(through.obj((file, enc, cb) => {
+      var template = file.contents.toString()
+      file.contents = Buffer.from(mustache.render(template, resumeJson))
+      cb(null, file)
+    }))
     .pipe(pdf())
+    .pipe(rename('resume.pdf'))
     .pipe(gulp.dest('build'))
 });
 
