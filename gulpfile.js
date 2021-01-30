@@ -58,6 +58,11 @@ gulp.task('js', () =>{
     .pipe(gulp.dest('build/js'))
 });
 
+gulp.task('icons', () =>{
+  return gulp.src('src/icons/**')
+    .pipe(gulp.dest('build/'))
+});
+
 gulp.task('watch', () => {
   livereload.listen();
   gulp.watch('src/js/*.js', ['js']);
@@ -65,4 +70,4 @@ gulp.task('watch', () => {
   gulp.watch('src/*.html', ['html']);
 });
 
-gulp.task('default', [ 'html', 'sass', 'css-min', 'js', 'pdf' ]);
+gulp.task('default', [ 'html', 'sass', 'css-min', 'js', 'pdf', 'icons' ]);

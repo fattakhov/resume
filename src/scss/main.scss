@@ -152,7 +152,7 @@ section {
             }
         }
     }
-    .work-expirience {
+    .work-experience {
         &__title:before {
             content: $fa-var-suitcase;
         }
@@ -161,6 +161,11 @@ section {
             &__title {
                 font-size: 1.1rem;
                 font-weight: bold;
+
+                span {
+                    border-top: 1px solid gray;
+                    padding-top: 3px;
+                }
             }
             &__dates {
                 font-size: 0.9rem;
@@ -178,7 +183,7 @@ section {
     }
     .certifications {
         &__title:before {
-            content: $fa-var-briefcase;
+            content: $fa-var-certificate;
         }
         &__item {
             margin: 10px 0;
@@ -196,6 +201,28 @@ section {
     .skills {
         &__title:before {
             content: $fa-var-tasks;
+        }
+        &__item {
+            &__title {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            ul {
+                padding-left: 0;
+                list-style: none;
+                li {
+                    display: inline-block;
+                    padding: 5px;
+                    margin: 1px;
+                    background: black;
+                    color: white;
+                }
+            }
+        }
+    }
+    .interests {
+        &__title:before {
+            content: $fa-var-heart;
         }
         &__item {
             &__title {

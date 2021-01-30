@@ -107,25 +107,25 @@
     }
 
 
-    section .work-expirience__item {
+    section .work-experience__item {
       font-size: 0.5rem;
     }
 
-    section .work-expirience__item__title {
+    section .work-experience__item__title {
       font-size: 0.6rem;
       font-weight: bold;
     }
 
-    section .work-expirience__item__dates {
+    section .work-experience__item__dates {
       font-size: 0.5rem;
       font-weight: bold;
     }
 
-    section .work-expirience__item__description {
+    section .work-experience__item__description {
       margin: 10px 0;
     }
 
-    section .work-expirience__item__highlights span {
+    section .work-experience__item__highlights span {
       font-weight: bold;
     }
 
@@ -153,6 +153,25 @@
     }
 
     section .skills__item ul li {
+      display: inline-block;
+      padding: 2.5px;
+      background: black;
+      color: white;
+      font-size: 0.5rem;
+      margin-top: 2px;
+    }
+
+    section .interests__item__title {
+      font-size: 0.5rem;
+      font-weight: bold;
+    }
+
+    section .interests__item ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    section .interests__item ul li {
       display: inline-block;
       padding: 2.5px;
       background: black;
@@ -189,15 +208,15 @@
           </span>
         </li>
         <li>
-          <span class="header__contacts__title">phone</span>
-          <span class="header__contacts__info">
-            <a target='_blank' href="tel:{{basics.phone}}">{{basics.phone}}</a>
-          </span>
-        </li>
-        <li>
           <span class="header__contacts__title">website</span>
           <span class="header__contacts__info">
             <a target='_blank' href="{{basics.website}}">{{basics.website}}</a>
+          </span>
+        </li>
+        <li>
+          <span class="header__contacts__title">telegram</span>
+          <span class="header__contacts__info">
+            <a target='_blank' href="https://telegram.me/{{basics.telegram}}">{{basics.telegram}}</a>
           </span>
         </li>
       </ul>
@@ -215,16 +234,22 @@
   </header>
   <section class="about">
     <h3 class="about__title">About</h3>
-    <p>{{basics.summary}}</p>
+    <p>{{&basics.summary}}</p>
   </section>
-  <section class="work-expirience">
-    <h3 class="work-expirience__title">Work Expirience</h3>
+  <section class="work-experience">
+    <h3 class="work-experience__title">Work experience</h3>
     {{#work}}
-      <div class="work-expirience__item">
-        <div class="work-expirience__item__title">{{position}}, {{company}}</div>
-        <div class="work-expirience__item__dates">{{startDate}} - {{endDate}}</div>
-        <div class="work-expirience__item__description">{{summary}}</div>
-        <div class="work-expirience__item__highlights">
+      <div class="work-experience__item">
+        <div class="work-experience__item__title">{{position}},
+          {{#website}}<a target='_blank' href="{{website}}">{{company}}</a>{{/website}}
+          {{^website}}<span style="color:grey;">{{company}}</span>{{/website}}
+        </div>
+        <div class="work-experience__item__dates">
+          {{startDate}}
+          {{#endDate}} - {{endDate}}{{/endDate}}
+        </div>
+        <div class="work-experience__item__description">{{&summary}}</div>
+        <div class="work-experience__item__highlights">
           <span>HIGHLIGHTS</span>
           <ul>
             {{#highlights}}
@@ -266,6 +291,19 @@
       <div class="education__item__gpa">GPA: {{gpa}}</div>
     </div>
     {{/education}}
+  </section>
+  <section class="interests">
+    <h3 class="interests__title">Interests</h3>
+    <div class="interests__item">
+      {{#interests}}
+        <div class="interests__item__title">{{name}}</div>
+        <ul>
+          {{#keywords}}
+            <li>{{.}}</li>
+          {{/keywords}}
+        </ul>
+      {{/interests}}
+    </div>
   </section>
   <footer>
   </footer>

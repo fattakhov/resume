@@ -10,7 +10,8 @@
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" type="image/png" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="css/app.min.css">
 </head>
 
@@ -31,15 +32,15 @@
           </span>
         </li>
         <li>
-          <span class="header__contacts__title">phone</span>
-          <span class="header__contacts__info">
-            <a target='_blank' href="tel:{{basics.phone}}">{{basics.phone}}</a>
-          </span>
-        </li>
-        <li>
           <span class="header__contacts__title">website</span>
           <span class="header__contacts__info">
             <a target='_blank' href="{{basics.website}}">{{basics.website}}</a>
+          </span>
+        </li>
+        <li>
+          <span class="header__contacts__title">telegram</span>
+          <span class="header__contacts__info">
+            <a target='_blank' href="https://telegram.me/{{basics.telegram}}">{{basics.telegram}}</a>
           </span>
         </li>
       </ul>
@@ -58,16 +59,25 @@
   <a class="download-resume" href="/resume.pdf">You can download this resume, if you need it</a>
   <section class="about">
     <h3 class="about__title">About</h3>
-    <p>{{basics.summary}}</p>
+    <p>{{&basics.summary}}</p>
   </section>
-  <section class="work-expirience">
-    <h3 class="work-expirience__title">Work Expirience</h3>
+  <section class="work-experience">
+    <h3 class="work-experience__title">Work Experience</h3>
     {{#work}}
-      <div class="work-expirience__item">
-        <div class="work-expirience__item__title">{{position}}, {{company}}</div>
-        <div class="work-expirience__item__dates">{{startDate}} - {{endDate}}</div>
-        <div class="work-expirience__item__description">{{summary}}</div>
-        <div class="work-expirience__item__highlights">
+      <div class="work-experience__item">
+        <div class="work-experience__item__title">
+          <span>
+            {{position}},
+            {{#website}}<a target='_blank' href="{{website}}">{{company}}</a>{{/website}}
+            {{^website}}<span style="color:grey;">{{company}}</span>{{/website}}
+          </span>
+        </div>
+        <div class="work-experience__item__dates">
+          {{startDate}}
+          {{#endDate}} - {{endDate}}{{/endDate}}
+        </div>
+        <div class="work-experience__item__description">{{&summary}}</div>
+        <div class="work-experience__item__highlights">
           <span>HIGHLIGHTS</span>
           <ul>
             {{#highlights}}
@@ -109,6 +119,19 @@
       <div class="education__item__gpa">GPA: {{gpa}}</div>
     </div>
     {{/education}}
+  </section>
+  <section class="Interests">
+    <h3 class="interests__title">Interests</h3>
+    <div class="interests__item">
+      {{#interests}}
+        <div class="interests__item__title">{{name}}</div>
+        <ul>
+          {{#keywords}}
+            <li>{{.}}</li>
+          {{/keywords}}
+        </ul>
+      {{/interests}}
+    </div>
   </section>
   <footer>
   </footer>

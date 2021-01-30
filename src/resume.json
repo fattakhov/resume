@@ -1,144 +1,221 @@
 {
     "basics": {
-      "name": "Mansur Fattakhov",
-      "label": "Software engineer",
-      "picture": "",
-      "email": "contact@fattakhoff.com",
-      "phone": "(917) 914-0708",
-      "website": "http://fattakhoff.com",
-      "summary": "My name is Mansur. Im a web developer with 10+ years experience in web development. My strongest skill is backend development. I used to work on projects from small web portals to enterprise solutions. Main languages/frameworks I use in my everyday work are Ruby/RubyOnRails, Python, JS. I have good experience in frontend development too. In my career I have tried many tools and I love to study and implement new frameworks and solutions in my work.",
-      "location": {
-        "address": "2712 Broadway St",
-        "postalCode": "CA 94115",
-        "city": "San Francisco",
-        "countryCode": "US",
-        "region": "California"
-      },
-      "profiles": [{
-        "network": "Github",
-        "icon": "github",
-        "username": "fattakhov",
-        "url": "https://github.com/fattakhov"
-      }, {
-        "network": "Bitbucket",
-        "icon": "bitbucket",
-        "username": "mfattakhov",
-        "url": "https://bitbucket.org/mfattakhov"
-      }, {
-        "network": "LinkedIn",
-        "icon": "linkedin",
-        "username": "fattakhov",
-        "url": "https://www.linkedin.com/profile/view?id=AAIAAArAGkoBLXW4CpwkdFauRyWvYjazG9dEQyY&trk=nav_responsive_tab_profile"
-      }, {
-        "network": "Stackoverflow",
-        "icon": "stackoverflow",
-        "username": "mansur-fattakhov",
-        "url": "https://stackoverflow.com/users/1697919/mansur-fattakhov"
-      }]
+        "name": "Mansur Fattakhov",
+        "label": "Software engineer",
+        "picture": "",
+        "email": "contact@mansur.pro",
+        "telegram": "fattakhoff",
+        "website": "http://mansur.pro",
+        "summary": "Software engineer with over 10+ years experience.<br> I have extensive experience in the development, support and design of web applications of varying complexity and in various programming languages, including the backend part and the frontend application components.<br> In addition to the application business logic development, I have experience in setting up project infrastructure.<br> In various periods of my professional activity, I acted as a team leader of a development group, I also have experience in managing a development studio as a CTO.",
+        "profiles": [
+            {
+                "network": "Github",
+                "icon": "github",
+                "username": "fattakhov",
+                "url": "https://github.com/fattakhov"
+            },
+            {
+                "network": "Bitbucket",
+                "icon": "bitbucket",
+                "username": "mfattakhov",
+                "url": "https://bitbucket.org/mfattakhov"
+            },
+            {
+                "network": "LinkedIn",
+                "icon": "linkedin",
+                "username": "fattakhov",
+                "url": "https://www.linkedin.com/profile/view?id=AAIAAArAGkoBLXW4CpwkdFauRyWvYjazG9dEQyY&trk=nav_responsive_tab_profile"
+            },
+            {
+                "network": "Stackoverflow",
+                "icon": "stackoverflow",
+                "username": "mansur-fattakhov",
+                "url": "https://stackoverflow.com/users/1697919/mansur-fattakhov"
+            }
+        ]
     },
-    "work": [{
-      "company": "Tensor",
-      "position": "Fullstack Software Engeneer",
-      "website": "http://company.com",
-      "startDate": "2016-10-01",
-      "endDate": "2018-01-01",
-      "summary": "As the team leader, I was responsible for the development of the functional section by me and my team. In the development we`re using python3, sql(postgresql) and js.",
-      "highlights": [
-        "Python 3",
-        "SQL/Postgres",
-        "JavaScript development",
-        "Team management"
-      ]
-    }, {
-      "company": "ITS Digital agency",
-      "position": "CTO",
-      "website": "http://company.com",
-      "startDate": "2014-01-01",
-      "endDate": "2016-09-01",
-      "summary": "ITS agency is a company that provides full support of business on the Internet. As CTO I've been developing web services, portals and took care for uninterrupted development cycle.",
-      "highlights": [
-        "RubyOnRails projects development",
-        "PHP projects development",
-        "Frontend development (sass, gulp, grunt, backbonejs)",
-        "Development team management"
-      ]
-    }, {
-      "company": "BARS Group",
-      "position": "Developer/Team lead",
-      "website": "http://company.com",
-      "startDate": "2011-01-01",
-      "endDate": "2014-01-01",
-      "summary": "As a lead developer I used to work on different web registry systems. We used Python/Django and ExtJS",
-      "highlights": [
-        "Accounting systems development",
-        "Backend development (Python/Django)",
-        "Frontend development (JS/ExtJS)",
-        "Solving the problems according agile methodology"
-      ]
-   }],
-   "certifications": [{
-     "title": "Professional Google Cloud Architect",
-     "url": "http://url.com",
-     "dates": "2020-2023"
-   }],
-    "volunteer": [{
-      "organization": "Organization",
-      "position": "Volunteer",
-      "website": "http://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Description...",
-      "highlights": [
-        "Awarded 'Volunteer of the Month'"
-      ]
-    }],
-    "education": [{
-      "institution": "Kazan State University",
-      "area": "Computational mathematics and cybernetics",
-      "studyType": "Specialist",
-      "startDate": "2007-01-01",
-      "endDate": "2012-01-01",
-      "gpa": "4.5/5",
-      "courses": [
-        "DB1101 - Basic SQL"
-      ]
-    }],
-    "awards": [{
-      "title": "Award",
-      "date": "2014-11-01",
-      "awarder": "Company",
-      "summary": "There is no spoon."
-    }],
-    "publications": [{
-      "name": "Publication",
-      "publisher": "Company",
-      "releaseDate": "2014-10-01",
-      "website": "http://publication.com",
-      "summary": "Description..."
-    }],
-    "skills": [{
-      "name": "Frontend development",
-      "level": "Master",
-      "keywords": [
-        "BackboneJS",
-        "AngularJS",
-        "SASS/Less",
-        "Gulp/Grunt/Webpack"
-      ]
-    }],
-    "languages": [{
-      "language": "English",
-      "fluency": "Native speaker"
-    }],
-    "interests": [{
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }],
-    "references": [{
-      "name": "Jane Doe",
-      "reference": "Reference..."
-    }]
-  }
+    "work": [
+        {
+            "company": "Pearson",
+            "position": "Lead Software Engineer",
+            "website": "https://www.pearson.com/",
+            "summary": "As a lead engineer, I was involved in the development and support of a group of micro-services that power the AI platform of Pearson's AIDA  projects family.<br>As part of these projects, I was actively involved in the development of application architecture and in the development of infrastructure and delivery of these products.<br>As a result of our work, we managed to create several large projects from scratch, and ensure their continuous operation in a short time.",
+            "highlights": [
+                "Golang / Gin",
+                "Python3 / Flask / Django",
+                "Google Cloud Platform",
+                "Terraform",
+                "Docker"
+            ]
+        },
+        {
+            "company": "DoorDash Inc.",
+            "position": "Software Engineer",
+            "website": "https://www.doordash.com/",
+            "startDate": "2018-Feb.",
+            "summary": "At Doordash, I have been working on creating order and menu integrations with third-party partners. This work included the development of the API, integrations with the partners' API, support of the internal microservice infrastructure.<br>As a result of the work of our group for several years, the number of business processes that we serve has greatly increased, the number of orders served by our infrastructure has grown several times and continues to increase.",
+            "highlights": [
+                "Python3 / Flask / Django",
+                "Kotlin / Micronaut",
+                "Docker",
+                "K8S",
+                "Kafka",
+                "REST",
+                "GRPC",
+                "Cadence",
+                "AWS"
+            ]
+        },
+        {
+            "company": "Tensor",
+            "position": "Team leader / Fullstack Software Engineer",
+            "website": "https://tensor.ru/",
+            "startDate": "2016-Nov.",
+            "endDate": "2018-Feb.",
+            "summary": "As the team leader, I was responsible for the development and supporting of the functional section of the SBIS project (issuance of electronic signatures).<br>As a result of the activities of my team the we have expanded our area of responsibility, added new functionality, while transferring the existing logic to the new system platform.",
+            "highlights": [
+                "Python3",
+                "SQL / Postgresql",
+                "JavaScript",
+                "Team management"
+            ]
+        },
+        {
+            "company": "ITS Digital agency",
+            "position": "CTO",
+            "website": "",
+            "startDate": "2014-Jan.",
+            "endDate": "2016-Sep.",
+            "summary": "",
+            "highlights": [
+                "RubyOnRails",
+                "Python3",
+                "PHP",
+                "Sass",
+                "Gulp / Grunt / Webpack",
+                "BackboneJS",
+                "Angular",
+                "Ansible / VPS hosting management",
+                "Development team management"
+            ]
+        },
+        {
+            "company": "BARS Group",
+            "position": "Developer / Team lead",
+            "website": "https://bars.group",
+            "startDate": "2011-Sep.",
+            "endDate": "2014-Jan.",
+            "summary": "I started to work as a junior Python developer and after a certain time has grown to a team leader, taking responsibility for the full development of the project and its support.",
+            "highlights": [
+                "Python2 / Django",
+                "JavaScript / ExtJS",
+                "SQL / Postgresql"
+            ]
+        }
+    ],
+    "certifications": [
+        {
+            "title": "Professional Cloud Architect (Google Cloud Platform)",
+            "url": "https://www.credential.net/efd94dc3-a351-4172-8305-cef2ec1053c8?key",
+            "dates": "2020-2022"
+        },
+        {
+            "title": "AWS Certified Solutions Architect - Associate",
+            "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+            "dates": "2020-2023"
+        },
+        {
+            "title": "AWS Certified Developer - Associate",
+            "url": "https://aws.amazon.com/certification/certified-developer-associate/",
+            "dates": "2020-2023"
+        }
+    ],
+    "education": [
+        {
+            "institution": "Kazan State University",
+            "area": "Computational mathematics and cybernetics",
+            "studyType": "Specialist",
+            "startDate": "2007-01-01",
+            "endDate": "2012-01-01",
+            "gpa": "4.5/5"
+        }
+    ],
+    "publications": [
+        {
+            "name": "Publication",
+            "publisher": "Company",
+            "releaseDate": "2014-10-01",
+            "website": "http://publication.com",
+            "summary": "Description..."
+        }
+    ],
+    "skills": [
+        {
+            "name": "Backend development",
+            "level": "Master",
+            "keywords": [
+                "Python",
+                "Kotlin",
+                "Golang",
+                "Ruby",
+                "Node"
+            ]
+        },
+        {
+            "name": "Frontend development",
+            "level": "Master",
+            "keywords": [
+                "JavaScript",
+                "React / Redux",
+                "Sass / Less",
+                "Gulp / Grunt / Webpack"
+            ]
+        },
+        {
+            "name": "Cloud development",
+            "level": "Master",
+            "keywords": [
+                "AWS",
+                "Google Cloud Platform"
+            ]
+        },
+        {
+            "name": "Team management",
+            "level": "Master",
+            "keywords": [
+                "Agile",
+                "Kanban",
+                "Task setting"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Advanced"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Self-cultivation",
+            "keywords": [
+                "Books",
+                "Sports",
+                "Proper nutrition"
+            ]
+        },
+        {
+            "name": "Family",
+            "keywords": [
+                "Kids",
+                "Traveling"
+            ]
+        }
+    ],
+    "references": [
+        {
+            "name": "Jane Doe",
+            "reference": "Reference..."
+        }
+    ]
+}
