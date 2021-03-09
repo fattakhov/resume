@@ -11,6 +11,8 @@ const resumeJson = require('./src/resume.json')
 const through = require('through2')
 const rename = require("gulp-rename")
 
+const distPath = "appengine/static"
+
 gulp.task('html', () =>{
   return gulp.src('src/index.template')
     .pipe(
@@ -21,7 +23,7 @@ gulp.task('html', () =>{
       }
     ))
     .pipe(rename('index.html'))
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest(distPath))
 });
 
 gulp.task('pdf', () =>{
@@ -33,20 +35,20 @@ gulp.task('pdf', () =>{
     }))
     .pipe(pdf())
     .pipe(rename('resume.pdf'))
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest(distPath))
 });
 
 gulp.task('sass', () =>{
   return gulp.src('src/scss/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('build/css'))
+    .pipe(gulp.dest(distPath + '/css'))
 });
 
 gulp.task('css-min', ['sass'], () =>{
-  return gulp.src('build/css/*.css')
+  return gulp.src(distPath + '/css/*.css')
     .pipe(concat('app.min.css'))
     .pipe(minifyCSS())
-    .pipe(gulp.dest('build/css'))
+    .pipe(gulp.dest(distPath + '/css'))
 });
 
 gulp.task('js', () =>{
@@ -55,12 +57,17 @@ gulp.task('js', () =>{
     .pipe(uglify())
     .pipe(concat('app.min.js'))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('build/js'))
+    .pipe(gulp.dest(distPath + '/js'))
 });
 
 gulp.task('icons', () =>{
   return gulp.src('src/icons/**')
-    .pipe(gulp.dest('build/'))
+    .pipe(gulp.dest(distPath + '/'))
+});
+
+gulp.task('fonts', () =>{
+  return gulp.src('src/fonts/**')
+    .pipe(gulp.dest(distPath + '/fonts'))
 });
 
 gulp.task('watch', () => {
@@ -70,4 +77,4 @@ gulp.task('watch', () => {
   gulp.watch('src/*.html', ['html']);
 });
 
-gulp.task('default', [ 'html', 'sass', 'css-min', 'js', 'pdf', 'icons' ]);
+gulp.task('default', [ 'html', 'sass', 'css-min', 'js', 'pdf', 'icons', 'fonts' ]);
