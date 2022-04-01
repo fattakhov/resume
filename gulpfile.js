@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const minifyCSS = require('gulp-minify-css');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
@@ -10,8 +10,8 @@ const mustache = require('mustache')
 const resumeJson = require('./src/resume.json')
 const through = require('through2')
 const rename = require("gulp-rename")
-
-const distPath = "appengine/static"
+const del = require('del');
+const distPath = "build"
 
 gulp.task('html', () =>{
   return gulp.src('src/index.template')
@@ -51,6 +51,10 @@ gulp.task('css-min', ['sass'], () =>{
     .pipe(gulp.dest(distPath + '/css'))
 });
 
+gulp.task('clean', ['css-min'], function(cb) {
+  del([distPath + '/css/**/*', '!' + distPath + '/css/app.min.css'], cb);
+});
+
 gulp.task('js', () =>{
   return gulp.src('src/js/*.js')
     .pipe(sourcemaps.init())
@@ -77,4 +81,4 @@ gulp.task('watch', () => {
   gulp.watch('src/*.html', ['html']);
 });
 
-gulp.task('default', [ 'html', 'sass', 'css-min', 'js', 'pdf', 'icons', 'fonts' ]);
+gulp.task('default', [ 'html', 'clean', 'js', 'pdf', 'icons', 'fonts' ]);

@@ -4,9 +4,9 @@
         "label": "Software engineer",
         "picture": "",
         "email": "contact@mansur.pro",
-        "telegram": "fattakhoff",
+        "telegram": "mansurfat",
         "website": "http://mansur.pro",
-        "summary": "Software engineer with over 10+ years experience.<br> I have extensive experience in the development, support and design of web applications of varying complexity and in various programming languages, including the backend part and the frontend application components.<br> In addition to the application business logic development, I have experience in setting up project infrastructure.<br> In various periods of my professional activity, I acted as a team leader of a development group, I also have experience in managing a development studio as a CTO.",
+        "summary": "Software engineer with over 10+ years experience.<br> I have extensive experience in the development, support and design of web applications of varying complexity and in various programming languages, including the backend part and the frontend application components.<br> In addition to the application business logic development, I have experience in setting up project infrastructure.<br> In various periods of my professional activity, I acted as a software architect, team leader of a development group, I also have experience in managing a development studio as a CTO.",
         "profiles": [
             {
                 "network": "Github",
@@ -36,6 +36,42 @@
     },
     "work": [
         {
+            "company": "Reddit",
+            "position": "Software engineer",
+            "website": "https://www.reddit.com/",
+            "summary": "As a software engineer my role was to extend and support the billing microservices.",
+            "highlights": [
+                "Python3 / baseplate.py",
+                "Postgresql / Cassandra",
+                "Docker",
+                "k8s"
+            ]
+        },
+        {
+            "company": "AstraZeneca",
+            "position": "Software architect",
+            "website": "https://www.astrazeneca.com/",
+            "summary": "As a solution architect I was involved into design and development processes of the image processing system for laboratories.",
+            "highlights": [
+                "Python3",
+                "AWS",
+                "Docker"
+            ]
+        },
+        {
+            "company": "LSEG",
+            "position": "Lead Software Engineer / Team lead",
+            "website": "https://www.lseg.com/",
+            "summary": "During the project, my team and I were able to create an MVP for processing financial news and have populated the ML model with which the client can track the fluctuations of currency pairs based on items from financial resources.",
+            "highlights": [
+                "Python3 / Flask / FastAPI",
+                "AWS Lambda",
+                "Amazon Sagemaker",
+                "Terraform",
+                "Docker"
+            ]
+        },
+        {
             "company": "Pearson",
             "position": "Lead Software Engineer",
             "website": "https://www.pearson.com/",
@@ -64,6 +100,19 @@
                 "GRPC",
                 "Cadence",
                 "AWS"
+            ]
+        },
+        {
+            "company": "",
+            "position": "Lead Software Engineer / Team lead",
+            "website": "https://www.lseg.com/",
+            "summary": "During the project, my team and I were able to create an MVP for processing financial news and have populated the ML model with which the client can track the fluctuations of currency pairs based on items from financial resources.",
+            "highlights": [
+                "Python3 / Flask / FastAPI",
+                "AWS Lambda",
+                "Amazon Sagemaker",
+                "Terraform",
+                "Docker"
             ]
         },
         {
@@ -155,10 +204,10 @@
             "level": "Master",
             "keywords": [
                 "Python",
-                "Kotlin",
+                "Kotlin / Java",
                 "Golang",
                 "Ruby",
-                "Node"
+                "NodeJS"
             ]
         },
         {
@@ -185,7 +234,9 @@
             "keywords": [
                 "Agile",
                 "Kanban",
-                "Task setting"
+                "Tasks management",
+                "Team management",
+                "Client communication"
             ]
         }
     ],
@@ -193,6 +244,18 @@
         {
             "language": "English",
             "fluency": "Advanced"
+        },
+        {
+            "language": "Spanish",
+            "fluency": "Novice"
+        },
+        {
+            "language": "Turkish",
+            "fluency": "Novice"
+        },
+        {
+            "language": "Georgian",
+            "fluency": "Novice"
         }
     ],
     "interests": [
@@ -208,6 +271,7 @@
             "name": "Family",
             "keywords": [
                 "Kids",
+                "Love",
                 "Traveling"
             ]
         }
