@@ -89,12 +89,12 @@
           {{#endDate}} - {{endDate}}{{/endDate}}
         </div>
         <div class="work-experience__item__description">{{&summary}}</div>
-        <div class="work-experience__item__highlights">
-          <span>HIGHLIGHTS</span>
+        <div class="work-experience__item__stack">
+          <span>Stack</span>
           <ul>
-            {{#highlights}}
+            {{#stack}}
               <li>{{.}}</li>
-            {{/highlights}}
+            {{/stack}}
           </ul>
         </div>
       </div>

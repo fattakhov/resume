@@ -40,7 +40,7 @@
             "position": "Software engineer",
             "website": "https://www.reddit.com/",
             "summary": "As a software engineer my role was to extend and support the billing microservices.",
-            "highlights": [
+            "stack": [
                 "Python3 / baseplate.py",
                 "Postgresql / Cassandra",
                 "Docker",
@@ -52,7 +52,7 @@
             "position": "Software architect",
             "website": "https://www.astrazeneca.com/",
             "summary": "As a solution architect I was involved into design and development processes of the image processing system for laboratories.",
-            "highlights": [
+            "stack": [
                 "Python3",
                 "AWS",
                 "Docker"
@@ -63,7 +63,7 @@
             "position": "Lead Software Engineer / Team lead",
             "website": "https://www.lseg.com/",
             "summary": "During the project, my team and I were able to create an MVP for processing financial news and have populated the ML model with which the client can track the fluctuations of currency pairs based on items from financial resources.",
-            "highlights": [
+            "stack": [
                 "Python3 / Flask / FastAPI",
                 "AWS Lambda",
                 "Amazon Sagemaker",
@@ -76,7 +76,7 @@
             "position": "Lead Software Engineer",
             "website": "https://www.pearson.com/",
             "summary": "As a lead engineer, I was involved in the development and support of a group of micro-services that power the AI platform of Pearson's AIDA  projects family.<br>As part of these projects, I was actively involved in the development of application architecture and in the development of infrastructure and delivery of these products.<br>As a result of our work, we managed to create several large projects from scratch, and ensure their continuous operation in a short time.",
-            "highlights": [
+            "stack": [
                 "Golang / Gin",
                 "Python3 / Flask / Django",
                 "Google Cloud Platform",
@@ -90,7 +90,7 @@
             "website": "https://www.doordash.com/",
             "startDate": "2018-Feb.",
             "summary": "At Doordash, I have been working on creating order and menu integrations with third-party partners. This work included the development of the API, integrations with the partners' API, support of the internal microservice infrastructure.<br>As a result of the work of our group for several years, the number of business processes that we serve has greatly increased, the number of orders served by our infrastructure has grown several times and continues to increase.",
-            "highlights": [
+            "stack": [
                 "Python3 / Flask / Django",
                 "Kotlin / Micronaut",
                 "Docker",
@@ -107,7 +107,7 @@
             "position": "Lead Software Engineer / Team lead",
             "website": "https://www.lseg.com/",
             "summary": "During the project, my team and I were able to create an MVP for processing financial news and have populated the ML model with which the client can track the fluctuations of currency pairs based on items from financial resources.",
-            "highlights": [
+            "stack": [
                 "Python3 / Flask / FastAPI",
                 "AWS Lambda",
                 "Amazon Sagemaker",
@@ -122,7 +122,7 @@
             "startDate": "2016-Nov.",
             "endDate": "2018-Feb.",
             "summary": "As the team leader, I was responsible for the development and supporting of the functional section of the SBIS project (issuance of electronic signatures).<br>As a result of the activities of my team the we have expanded our area of responsibility, added new functionality, while transferring the existing logic to the new system platform.",
-            "highlights": [
+            "stack": [
                 "Python3",
                 "SQL / Postgresql",
                 "JavaScript",
@@ -136,7 +136,7 @@
             "startDate": "2014-Jan.",
             "endDate": "2016-Sep.",
             "summary": "",
-            "highlights": [
+            "stack": [
                 "RubyOnRails",
                 "Python3",
                 "PHP",
@@ -155,7 +155,7 @@
             "startDate": "2011-Sep.",
             "endDate": "2014-Jan.",
             "summary": "I started to work as a junior Python developer and after a certain time has grown to a team leader, taking responsibility for the full development of the project and its support.",
-            "highlights": [
+            "stack": [
                 "Python2 / Django",
                 "JavaScript / ExtJS",
                 "SQL / Postgresql"
