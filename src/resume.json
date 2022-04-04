@@ -1,12 +1,12 @@
 {
     "basics": {
         "name": "Mansur Fattakhov",
-        "label": "Software engineer",
+        "label": "Software engineer / Solutions architect",
         "picture": "",
         "email": "contact@mansur.pro",
         "telegram": "mansurfat",
         "website": "http://mansur.pro",
-        "summary": "Software engineer with over 10+ years experience.<br> I have extensive experience in the development, support and design of web applications of varying complexity and in various programming languages, including the backend part and the frontend application components.<br> In addition to the application business logic development, I have experience in setting up project infrastructure.<br> In various periods of my professional activity, I acted as a software architect, team leader of a development group, I also have experience in managing a development studio as a CTO.",
+        "summary": "Software engineer with over 11+ years experience.<br> I have extensive experience in the development, support and design of web applications of varying complexity and in various programming languages, including the backend part and the frontend application components.<br> In addition to the application business logic development, I have experience in setting up project infrastructure.<br> In various periods of my professional activity, I acted as a software architect, team leader of a development group, I also have experience in managing a development studio as a CTO.",
         "profiles": [
             {
                 "network": "Github",
@@ -100,19 +100,6 @@
                 "GRPC",
                 "Cadence",
                 "AWS"
-            ]
-        },
-        {
-            "company": "",
-            "position": "Lead Software Engineer / Team lead",
-            "website": "https://www.lseg.com/",
-            "summary": "During the project, my team and I were able to create an MVP for processing financial news and have populated the ML model with which the client can track the fluctuations of currency pairs based on items from financial resources.",
-            "stack": [
-                "Python3 / Flask / FastAPI",
-                "AWS Lambda",
-                "Amazon Sagemaker",
-                "Terraform",
-                "Docker"
             ]
         },
         {
