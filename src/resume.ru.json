@@ -1,12 +1,12 @@
 {
     "basics": {
-        "name": "Mansur Fattakhov",
-        "label": "Software engineer / Solutions architect",
+        "name": "Мансур Фаттахов",
+        "label": "Ведущий разработчик / Архитектор IT решений",
         "picture": "",
         "email": "letter.mansur@gmail.com",
         "telegram": "mansurfat",
         "website": "http://mansur.pro",
-        "summary": "Software engineer with over 14+ years experience.<br> I have extensive experience in the development, support and design of web applications of varying complexity and in various programming languages, including the backend part and the frontend application components.<br> In addition to the application business logic development, I have experience in setting up project infrastructure.<br> In various periods of my professional activity, I acted as a software architect, team leader of a development group, I also have experience in managing a development studio as a CTO.",
+        "summary": "Разработчик программного обеспечения с 14+ годами опыта.<br> У меня есть большой опыт в разработке, поддержке и проектировании веб приложений различной сложности и на различных языках программирования, включая бэкенд и фронтэнд компоненты.<br> Помимо разработки бизнес логики приложений, у меня есть большой опыт настройки инфраструктуры проектов.<br> Есть опыт работы на различных ролях, таких как лид (тех/тим), глава разработки, системный архитектор и CTO",
         "profiles": [
             {
                 "network": "Github",
@@ -36,23 +36,23 @@
     },
     "work": [
         {
-            "company": "Dengi Vpered",
-            "position": "Head of development",
+            "company": "Деньги вперед",
+            "position": "Руководитель разработки",
             "website": "https://dengi-vpered.ru/",
-            "summary": "In the company I was responsible for the full process of the development of a few products from scratch. I've been designing the architecture of the microservices, development, people hiring, setting up the development processes and was in charge for the whole development cycle.",
+            "summary": "В компании я был ответственен за весь процесс разработки нескольких проектов. Я занимался разработкой архитектуры, написанием кода, подбором команды, настройкой процессов разработки и был ответственен за весь цикл разработки проекта.",
             "stack": [
                 "Python3 / Django / FastAPI",
                 "Postgresql / Clickhouse",
                 "Docker",
                 "Team / tech leading",
-                "Microservice architecture design"
+                "Разработка архитектуры проекта"
             ]
         },
         {
             "company": "Reddit",
-            "position": "Software engineer",
+            "position": "Ведущий разработчик",
             "website": "https://www.reddit.com/",
-            "summary": "As a software engineer my role was to extend and support the billing microservices.",
+            "summary": "В составе команды разработки я занимался развитием и поддержкой систем биллинга.",
             "stack": [
                 "Python3 / baseplate.py",
                 "Postgresql / Cassandra",
@@ -62,9 +62,9 @@
         },
         {
             "company": "AstraZeneca",
-            "position": "Software architect",
+            "position": "Системный архитектор",
             "website": "https://www.astrazeneca.com/",
-            "summary": "As a solution architect I was involved into design and development processes of the image processing system for laboratories.",
+            "summary": "В качестве системного архитектора я занимался дизайном системы распознования изображений для лабораторий.",
             "stack": [
                 "Python3",
                 "AWS",
@@ -73,9 +73,9 @@
         },
         {
             "company": "LSEG",
-            "position": "Lead Software Engineer / Team lead",
+            "position": "Ведущий разработчик",
             "website": "https://www.lseg.com/",
-            "summary": "During the project, my team and I were able to create an MVP for processing financial news and have populated the ML model with which the client can track the fluctuations of currency pairs based on items from financial resources.",
+            "summary": "В течение проекта я и команда создали MVP продукта для обработки финансовых новостей и разработали модель, благодаря которой клиент мог прогнозировать корреляции различных пар валют относительно друг друга.",
             "stack": [
                 "Python3 / Flask / FastAPI",
                 "AWS Lambda",
@@ -86,9 +86,9 @@
         },
         {
             "company": "Pearson",
-            "position": "Lead Software Engineer",
+            "position": "Ведущий разработчик",
             "website": "https://www.pearson.com/",
-            "summary": "As a lead engineer, I was involved in the development and support of a group of micro-services that power the AI platform of Pearson's AIDA  projects family.<br>As part of these projects, I was actively involved in the development of application architecture and in the development of infrastructure and delivery of these products.<br>As a result of our work, we managed to create several large projects from scratch, and ensure their continuous operation in a short time.",
+            "summary": "В качестве ведущего разработчика я работал над проектированием и разработкой группы микросервисов, обеспечивающих работу AI платформы Pearson под названием AIDA.<br>Как результат моей работы, мы создали несколько крупных проектов в течение короткого времени и обеспечили их поддержку и расширямость в дальнейшем.",
             "stack": [
                 "Golang / Gin",
                 "Python3 / Flask / Django",
@@ -99,9 +99,10 @@
         },
         {
             "company": "DoorDash Inc.",
-            "position": "Software Engineer",
+            "position": "Ведущий разработчик",
             "website": "https://www.doordash.com/",
-            "summary": "At Doordash, I have been working on creating order and menu integrations with third-party partners. This work included the development of the API, integrations with the partners' API, support of the internal microservice infrastructure.<br>As a result of the work of our group for several years, the number of business processes that we serve has greatly increased, the number of orders served by our infrastructure has grown several times and continues to increase.",
+            "startDate": "2018-Feb.",
+            "summary": "В Doordash я работал над интеграциями со торонними партнерами для передачи заказов и меню (POS-точки ресторанов). Это включало создание собственного API, интеграцию со сторонними API, поддержку внутренних микросервисов.<br>Как результат моей работы в команде, мы смогли обеспечить возросшие в несколько раз в течение нескольких лет объемы заказов и интеграций.",
             "stack": [
                 "Python3 / Flask / Django",
                 "Kotlin / Micronaut",
@@ -116,11 +117,11 @@
         },
         {
             "company": "Tensor",
-            "position": "Team leader / Fullstack Engineer",
+            "position": "Ведущий разработчик / Fullstack разработчик",
             "website": "https://tensor.ru/",
             "startDate": "2016-Nov.",
             "endDate": "2018-Feb.",
-            "summary": "As the team leader, I was responsible for the development and supporting of the functional section of the SBIS project (issuance of electronic signatures).<br>As a result of the activities of my team the we have expanded our area of responsibility, added new functionality, while transferring the existing logic to the new system platform.",
+            "summary": "Как лидер разработки я был ответственен за разработку и поддержку функциональных участков проекта СБИС (электронные подписи).<br>Как результат моей работы, мы расширили наши зоны ответственности, при этом переведя наш код на новую платформу компании.",
             "stack": [
                 "Python3",
                 "SQL / Postgresql",
@@ -143,8 +144,8 @@
                 "Gulp / Grunt / Webpack",
                 "BackboneJS",
                 "Angular",
-                "Ansible / VPS hosting management",
-                "Development team management"
+                "Ansible / VPS хостинг мэнеджмент",
+                "Управление командой"
             ]
         },
         {
@@ -153,7 +154,7 @@
             "website": "https://bars.group",
             "startDate": "2011-Sep.",
             "endDate": "2014-Jan.",
-            "summary": "I started to work as a junior Python developer and after a certain time has grown to a team leader, taking responsibility for the full development of the project and its support.",
+            "summary": "Начав с позиции junior разработчика за несколько лет я дорос до ведущего разработчика, взяв ответственность за разработку и поддержку отдельного продукта компании.",
             "stack": [
                 "Python2 / Django",
                 "JavaScript / ExtJS",
@@ -180,9 +181,9 @@
     ],
     "education": [
         {
-            "institution": "Kazan State University",
-            "area": "Computational mathematics and cybernetics",
-            "studyType": "Specialist",
+            "institution": "Казанский Федеральный Университет",
+            "area": "Факультет вычислительной математики и кибернетики",
+            "studyType": "Специалист",
             "startDate": "2007-01-01",
             "endDate": "2012-01-01",
             "gpa": "4.5/5"
@@ -199,7 +200,7 @@
     ],
     "skills": [
         {
-            "name": "Backend development",
+            "name": "Бэкенд разработка",
             "level": "Master",
             "keywords": [
                 "Python",
@@ -210,7 +211,7 @@
             ]
         },
         {
-            "name": "Frontend development",
+            "name": "Фронтэнд разработка",
             "level": "Master",
             "keywords": [
                 "JavaScript",
@@ -220,59 +221,58 @@
             ]
         },
         {
-            "name": "Cloud development",
+            "name": "Cloud платформы",
             "level": "Master",
             "keywords": [
                 "AWS",
-                "Google Cloud Platform",
-                "Terraform",
-                "Ansible"
+                "Google Cloud Platform"
             ]
         },
         {
-            "name": "Team management",
+            "name": "Управление командой",
             "level": "Master",
             "keywords": [
-                "Agile / Kanban / Scrum",
-                "Team / tech leading",
-                "Tasks management",
-                "Client communication"
+                "Agile",
+                "Kanban",
+                "Управление задачами",
+                "Управление командой",
+                "Коммуникация с клиентами"
             ]
         }
     ],
     "languages": [
         {
             "language": "English",
-            "fluency": "Advanced"
+            "fluency": "Продвинутый"
         },
         {
             "language": "Spanish",
-            "fluency": "Novice"
+            "fluency": "Начинающий"
         },
         {
             "language": "Turkish",
-            "fluency": "Advanced"
+            "fluency": "Продвинутый"
         },
         {
             "language": "Georgian",
-            "fluency": "Novice"
+            "fluency": "Начинающий"
         }
     ],
     "interests": [
         {
-            "name": "Self-cultivation",
+            "name": "Саморазвитие",
             "keywords": [
-                "Books",
-                "Sports",
-                "Proper nutrition"
+                "Книги",
+                "Спорт",
+                "Здоровое питание"
             ]
         },
         {
-            "name": "Family",
+            "name": "Семья",
             "keywords": [
-                "Kids",
-                "Love",
-                "Traveling"
+                "Дети",
+                "Любовь",
+                "Путешествия"
             ]
         }
     ],

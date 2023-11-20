@@ -1,0 +1,314 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Резюме {{basics.name}}</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans" rel="stylesheet">
+  <link rel="manifest" href="site.webmanifest">
+
+  <style>
+    ::selection {
+      background: yellow;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      margin-bottom: 25px;
+    }
+
+    a {
+      color: gray;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: white;
+      background-color: black;
+    }
+
+    h1,
+    h2,
+    h3 {
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 0.8rem;
+      margin-top: 0.3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      font-size: 0.8rem;
+    }
+
+    header .header__contacts ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 1rem;
+    }
+
+    header .header__contacts ul>li {
+      font-size: 0.6rem;
+    }
+
+    header .header__contacts__title {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    header .header__contacts__title:after {
+      content: '•';
+      margin-left: 2.5px;
+    }
+
+    header .header__profiles__title {
+      text-transform: uppercase;
+      font-size: 0.6rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    header .header__profiles ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    header .header__profiles ul>li {
+      font-size: 0.6rem;
+    }
+
+    section {
+      margin: 0;
+    }
+
+    section h3:before {
+      margin-right: 5px;
+      font-family: FontAwesome, serif;
+    }
+
+    section p {
+      font-size: 0.5rem;
+    }
+
+    section .about__title {
+      font-size: 0.8rem;
+    }
+
+
+    section .work-experience__item {
+      font-size: 0.5rem;
+    }
+
+    section .work-experience__item__title {
+      font-size: 0.6rem;
+      font-weight: bold;
+    }
+
+    section .work-experience__item__dates {
+      font-size: 0.5rem;
+      font-weight: bold;
+    }
+
+    section .work-experience__item__description {
+      margin: 10px 0;
+    }
+
+    section .work-experience__item__stack span {
+      font-weight: bold;
+    }
+
+    section .certifications__item {
+      margin: 5px 0;
+      font-weight: bold;
+    }
+
+    section .certifications__item__title a {
+      font-size: 0.6rem;
+    }
+
+    section .certifications__item__dates {
+      font-size: 0.5rem;
+    }
+
+    section .skills__item__title {
+      font-size: 0.5rem;
+      font-weight: bold;
+    }
+
+    section .skills__item ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    section .skills__item ul li {
+      display: inline-block;
+      padding: 2.5px;
+      background: black;
+      color: white;
+      font-size: 0.5rem;
+      margin-top: 2px;
+    }
+
+    section .interests__item__title {
+      font-size: 0.5rem;
+      font-weight: bold;
+    }
+
+    section .interests__item ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    section .interests__item ul li {
+      display: inline-block;
+      padding: 2.5px;
+      background: black;
+      color: white;
+      font-size: 0.5rem;
+      margin-top: 2px;
+    }
+
+    section .education__item {
+      font-size: 0.5rem;
+      font-weight: bold;
+    }
+
+    section .education__item__title {
+      font-size: 0.6rem;
+    }
+
+    section .education__item__dates {
+      font-size: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>{{basics.name}}</h1>
+    <h2>{{basics.label}}</h2>
+    <div class="header__contacts">
+      <ul>
+        <li>
+          <span class="header__contacts__title">Почта</span>
+          <span class="header__contacts__info">
+            <a target='_blank' href="mailto:{{basics.email}}">{{basics.email}}</a>
+          </span>
+        </li>
+        <li>
+          <span class="header__contacts__title">Вебсайт</span>
+          <span class="header__contacts__info">
+            <a target='_blank' href="{{basics.website}}">{{basics.website}}</a>
+          </span>
+        </li>
+        <li>
+          <span class="header__contacts__title">Телеграм</span>
+          <span class="header__contacts__info">
+            <a target='_blank' href="https://telegram.me/{{basics.telegram}}">{{basics.telegram}}</a>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class="header__profiles">
+      <div class="header__profiles__title">страницы</div>
+      <ul>
+        {{#basics.profiles}}
+        <li class="header__profiles__{{icon}}">
+          <a target='_blank' href="{{url}}">{{network}}</a>
+        </li>
+        {{/basics.profiles}}
+      </ul>
+    </div>
+  </header>
+  <section class="about">
+    <h3 class="about__title">Обо мне</h3>
+    <p>{{&basics.summary}}</p>
+  </section>
+  <section class="work-experience">
+    <h3 class="work-experience__title">Опыт работы</h3>
+    {{#work}}
+      <div class="work-experience__item">
+        <div class="work-experience__item__title">{{position}},
+          {{#website}}<a target='_blank' href="{{website}}">{{company}}</a>{{/website}}
+          {{^website}}<span style="color:grey;">{{company}}</span>{{/website}}
+        </div>
+        <div class="work-experience__item__dates">
+          {{startDate}}
+          {{#endDate}} - {{endDate}}{{/endDate}}
+        </div>
+        <div class="work-experience__item__description">{{&summary}}</div>
+        <div class="work-experience__item__stack">
+          <span>Технологии</span>
+          <ul>
+            {{#stack}}
+              <li>{{.}}</li>
+            {{/stack}}
+          </ul>
+        </div>
+      </div>
+    {{/work}}
+  </section>
+  <section class="certifications">
+    <h3 class="certifications__title">Сертификаты</h3>
+    {{#certifications}}
+    <div class="certifications__item">
+      <div class="certifications__item__title"><a target='_blank' href="{{url}}">{{title}}</a></div>
+      <div class="certifications__item__dates">{{dates}}</div>
+    </div>
+    {{/certifications}}
+  </section>
+  <section class="skills">
+    <h3 class="skills__title">Навыки</h3>
+    <div class="skills__item">
+      {{#skills}}
+        <div class="skills__item__title">{{name}}</div>
+        <ul>
+          {{#keywords}}
+            <li>{{.}}</li>
+          {{/keywords}}
+        </ul>
+      {{/skills}}
+    </div>
+  </section>
+  <section class="education">
+    <h3 class="education__title">Образование</h3>
+    {{#education}}
+    <div class="education__item">
+      <div class="education__item__title">{{studyType}}, {{area}} - {{institution}}</div>
+      <div class="education__item__dates">{{startDate}} – {{endDate}}</div>
+      <div class="education__item__gpa">GPA: {{gpa}}</div>
+    </div>
+    {{/education}}
+  </section>
+  <section class="interests">
+    <h3 class="interests__title">Интересы</h3>
+    <div class="interests__item">
+      {{#interests}}
+        <div class="interests__item__title">{{name}}</div>
+        <ul>
+          {{#keywords}}
+            <li>{{.}}</li>
+          {{/keywords}}
+        </ul>
+      {{/interests}}
+    </div>
+  </section>
+  <footer>
+  </footer>
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
