@@ -1,12 +1,12 @@
 {
     "basics": {
         "name": "Mansur Fattakhov",
-        "label": "Software engineer / Solutions architect",
+        "label": "Lead Software Engineer / IT Solutions Architect",
         "picture": "",
         "email": "letter.mansur@gmail.com",
         "telegram": "mansurfat",
         "website": "http://mansur.pro",
-        "summary": "Software engineer with over 14+ years experience.<br> I have extensive experience in the development, support and design of web applications of varying complexity and in various programming languages, including the backend part and the frontend application components.<br> In addition to the application business logic development, I have experience in setting up project infrastructure.<br> In various periods of my professional activity, I acted as a software architect, team leader of a development group, I also have experience in managing a development studio as a CTO.",
+        "summary": "Software engineer with 14+ years of experience in backend and frontend development, system design, and infrastructure.<br>Proficient in building and maintaining web applications of varying complexity using diverse technology stacks.<br>Strong experience in infrastructure setup (CI/CD, cloud platforms), and project leadership.<br>Held roles such as Tech Lead, Team Lead, Development Manager, and System Architect.",
         "profiles": [
             {
                 "network": "Github",
@@ -36,10 +36,26 @@
     },
     "work": [
         {
+            "company": "Samolet",
+            "position": "Engineering Team Lead",
+            "website": "https://samolet.ru/",
+            "startDate": "2023-Aug.",
+            "endDate": "2025-Mar.",
+            "summary": "Led the development of multiple internal systems for construction business processes. Acted as a technical lead and drove architectural decisions.",
+            "stack": [
+                "Python3 / Django / FastAPI",
+                "Postgresql",
+                "Docker",
+                "Tech leading"
+            ]
+        },
+        {
             "company": "Dengi Vpered",
             "position": "Head of development",
             "website": "https://dengi-vpered.ru/",
-            "summary": "In the company I was responsible for the full process of the development of a few products from scratch. I've been designing the architecture of the microservices, development, people hiring, setting up the development processes and was in charge for the whole development cycle.",
+            "startDate": "2022-Aug.",
+            "endDate": "2024-Jan.",
+            "summary": "Owned full development lifecycle of two core B2C products: planning, architecture, implementation, and team management.<br>Built MVP from scratch using Django/FastAPI, formed and trained 3 internal teams (3–4 devs each), and implemented CI/CD and Agile workflows.",
             "stack": [
                 "Python3 / Django / FastAPI",
                 "Postgresql / Clickhouse",
@@ -50,9 +66,9 @@
         },
         {
             "company": "Reddit",
-            "position": "Software engineer",
+            "position": "Senior Developer",
             "website": "https://www.reddit.com/",
-            "summary": "As a software engineer my role was to extend and support the billing microservices.",
+            "summary": "Designed and implemented architecture of 3 key microservices (Python/gRPC/Kubernetes) powering billing and ad automation systems.",
             "stack": [
                 "Python3 / baseplate.py",
                 "Postgresql / Cassandra",
@@ -62,9 +78,9 @@
         },
         {
             "company": "AstraZeneca",
-            "position": "Software architect",
+            "position": "System Architect",
             "website": "https://www.astrazeneca.com/",
-            "summary": "As a solution architect I was involved into design and development processes of the image processing system for laboratories.",
+            "summary": "Designed a computer vision system (Python, OpenCV, TensorFlow) for automated image recognition in lab environments, improving classification accuracy by 35%.",
             "stack": [
                 "Python3",
                 "AWS",
@@ -72,10 +88,10 @@
             ]
         },
         {
-            "company": "LSEG",
+            "company": "London Stock Exchange Group (LSEG)",
             "position": "Lead Software Engineer / Team lead",
             "website": "https://www.lseg.com/",
-            "summary": "During the project, my team and I were able to create an MVP for processing financial news and have populated the ML model with which the client can track the fluctuations of currency pairs based on items from financial resources.",
+            "summary": "Built a financial news processing system integrated with an ML model for currency pair correlation forecasting. Increased prediction accuracy by 30%.",
             "stack": [
                 "Python3 / Flask / FastAPI",
                 "AWS Lambda",
@@ -88,7 +104,7 @@
             "company": "Pearson",
             "position": "Lead Software Engineer",
             "website": "https://www.pearson.com/",
-            "summary": "As a lead engineer, I was involved in the development and support of a group of micro-services that power the AI platform of Pearson's AIDA  projects family.<br>As part of these projects, I was actively involved in the development of application architecture and in the development of infrastructure and delivery of these products.<br>As a result of our work, we managed to create several large projects from scratch, and ensure their continuous operation in a short time.",
+            "summary": "Led the design and development of microservices for Pearson’s AI platform AIDA, launching multiple fault-tolerant and scalable projects.",
             "stack": [
                 "Golang / Gin",
                 "Python3 / Flask / Django",
@@ -99,9 +115,11 @@
         },
         {
             "company": "DoorDash Inc.",
-            "position": "Software Engineer",
+            "position": "Senior Developer",
             "website": "https://www.doordash.com/",
-            "summary": "At Doordash, I have been working on creating order and menu integrations with third-party partners. This work included the development of the API, integrations with the partners' API, support of the internal microservice infrastructure.<br>As a result of the work of our group for several years, the number of business processes that we serve has greatly increased, the number of orders served by our infrastructure has grown several times and continues to increase.",
+            "startDate": "2018-Feb.",
+            "endDate": "2021-Aug.",
+            "summary": "Developed and launched integrations with external partners (REST APIs, XML/JSON) to sync restaurant menus and orders.<br>Built internal gateways and supported microservices architecture. Enabled 3x order growth over 2 years without SLA degradation.",
             "stack": [
                 "Python3 / Flask / Django",
                 "Kotlin / Micronaut",
@@ -116,11 +134,11 @@
         },
         {
             "company": "Tensor",
-            "position": "Team leader / Fullstack Engineer",
+            "position": "Lead Fullstack Developer",
             "website": "https://tensor.ru/",
             "startDate": "2016-Nov.",
             "endDate": "2018-Feb.",
-            "summary": "As the team leader, I was responsible for the development and supporting of the functional section of the SBIS project (issuance of electronic signatures).<br>As a result of the activities of my team the we have expanded our area of responsibility, added new functionality, while transferring the existing logic to the new system platform.",
+            "summary": "Led development of key modules for SBIS digital signature system (Python), ensuring security and platform stability.<br>Migrated codebase to a new corporate platform, improving system performance and scalability.",
             "stack": [
                 "Python3",
                 "SQL / Postgresql",
@@ -134,7 +152,7 @@
             "website": "",
             "startDate": "2014-Jan.",
             "endDate": "2016-Sep.",
-            "summary": "",
+            "summary": "Managed custom development studio with 15+ engineers. Set up planning, design, and development processes; led technical architecture and client communication.",
             "stack": [
                 "RubyOnRails",
                 "Python3",
@@ -153,7 +171,7 @@
             "website": "https://bars.group",
             "startDate": "2011-Sep.",
             "endDate": "2014-Jan.",
-            "summary": "I started to work as a junior Python developer and after a certain time has grown to a team leader, taking responsibility for the full development of the project and its support.",
+            "summary": "Promoted from Developer to Lead, taking ownership of the “BARS Veterinary” enterprise product.<br>Optimized codebase (Python/Django, ExtJS), reducing response time by 30% and simplifying modular implementation.",
             "stack": [
                 "Python2 / Django",
                 "JavaScript / ExtJS",
@@ -260,19 +278,10 @@
     ],
     "interests": [
         {
-            "name": "Self-cultivation",
+            "name": "Self-development",
             "keywords": [
-                "Books",
-                "Sports",
-                "Proper nutrition"
-            ]
-        },
-        {
-            "name": "Family",
-            "keywords": [
-                "Kids",
-                "Love",
-                "Traveling"
+                "Reading",
+                "Sports"
             ]
         }
     ],
