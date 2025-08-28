@@ -1,110 +1,205 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
-const minifyCSS = require('gulp-minify-css');
-const concat = require('gulp-concat');
-const uglify = require('gulp-uglify');
+// gulpfile.js — Gulp v4 + Dart Sass + PostCSS + Puppeteer PDF
+const { src, dest, series, parallel, watch } = require('gulp');
+const path = require('path');
+const fs = require('fs');
+
+const dartSass = require('sass');
+const gulpSass = require('gulp-sass')(dartSass);
 const sourcemaps = require('gulp-sourcemaps');
-const livereload = require('gulp-livereload');
-const pdf = require('gulp-html-pdf')
-const mustache = require('mustache')
-const resumeJson = require('./src/resume.json')
-const resumeRuJson = require('./src/resume.ru.json')
-const through = require('through2')
-const rename = require("gulp-rename")
-const del = require('del');
-const distPath = "build"
+const rename = require('gulp-rename');
+const through = require('through2');
 
-gulp.task('html', () =>{
-  return gulp.src('src/index.template')
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+const terser = require('gulp-terser');
+
+const mustache = require('mustache');
+const puppeteer = require('puppeteer');
+
+const isProd = process.env.NODE_ENV === 'production';
+const distPath = 'build';
+
+const paths = {
+  htmlTpl: 'src/index.template',
+  htmlRuTpl: 'src/index.ru.template',
+  pdfTpl: 'src/pdf.template',
+  pdfRuTpl: 'src/pdf.ru.template',
+  stylesEntry: 'src/scss/main.scss',
+  stylesWatch: 'src/scss/**/*.scss',
+  js: 'src/js/**/*.js',
+  icons: 'src/icons/**',
+  fonts: 'src/fonts/**'
+};
+
+const resumeJson = require('./src/resume.json');
+const resumeRuJson = require('./src/resume.ru.json');
+
+// del@7 — ESM only: используем динамический импорт
+async function clean() {
+  const { deleteAsync } = await import('del');
+  return deleteAsync(
+    [
+      `${distPath}/css`,
+      `${distPath}/js`,
+      `${distPath}/webfonts`,
+      `${distPath}/fonts`,
+      `${distPath}/index*.html`,
+      `${distPath}/resume*.pdf`
+    ],
+    { force: true }
+  );
+}
+
+// ---------- HTML ----------
+function html() {
+  return src(paths.htmlTpl)
     .pipe(
-      through.obj((file, enc, cb) => {
-        var template = file.contents.toString()
-        file.contents = Buffer.from(mustache.render(template, resumeJson))
-        cb(null, file)
-      }
-    ))
+      through.obj((file, _, cb) => {
+        const template = file.contents.toString();
+        file.contents = Buffer.from(mustache.render(template, resumeJson));
+        cb(null, file);
+      })
+    )
     .pipe(rename('index.html'))
-    .pipe(gulp.dest(distPath))
-});
+    .pipe(dest(distPath));
+}
 
-gulp.task('html-ru', () =>{
-  return gulp.src('src/index.ru.template')
+function htmlRu() {
+  return src(paths.htmlRuTpl)
     .pipe(
-      through.obj((file, enc, cb) => {
-        var template = file.contents.toString()
-        file.contents = Buffer.from(mustache.render(template, resumeRuJson))
-        cb(null, file)
-      }
-    ))
+      through.obj((file, _, cb) => {
+        const template = file.contents.toString();
+        file.contents = Buffer.from(mustache.render(template, resumeRuJson));
+        cb(null, file);
+      })
+    )
     .pipe(rename('index.ru.html'))
-    .pipe(gulp.dest(distPath))
-});
+    .pipe(dest(distPath));
+}
 
-gulp.task('pdf', () =>{
-  return gulp.src('src/pdf.template')
-    .pipe(through.obj((file, enc, cb) => {
-      var template = file.contents.toString()
-      file.contents = Buffer.from(mustache.render(template, resumeJson))
-      cb(null, file)
-    }))
-    .pipe(pdf())
-    .pipe(rename('resume.pdf'))
-    .pipe(gulp.dest(distPath))
-});
+// ---------- PDF (Puppeteer) ----------
+async function renderPdfFromTemplate({ templatePath, data, outPath, baseHrefDir }) {
+  const template = fs.readFileSync(templatePath, 'utf8');
+  const html = `<base href="file://${baseHrefDir.replace(/\\/g, '/')}/">\n${mustache.render(
+    template,
+    data
+  )}`;
 
-gulp.task('pdf-ru', () =>{
-  return gulp.src('src/pdf.ru.template')
-    .pipe(through.obj((file, enc, cb) => {
-      var template = file.contents.toString()
-      file.contents = Buffer.from(mustache.render(template, resumeRuJson))
-      cb(null, file)
-    }))
-    .pipe(pdf())
-    .pipe(rename('resume.ru.pdf'))
-    .pipe(gulp.dest(distPath))
-});
+  const launchArgs = process.env.PPTR_NO_SANDBOX
+    ? { headless: 'new', args: ['--no-sandbox', '--disable-setuid-sandbox'] }
+    : { headless: 'new' };
 
-gulp.task('sass', () =>{
-  return gulp.src('src/scss/*.scss')
-    .pipe(sass())
-    .pipe(gulp.dest(distPath + '/css'))
-});
+  const browser = await puppeteer.launch(launchArgs);
+  try {
+    const page = await browser.newPage();
+    await page.setContent(html, { waitUntil: 'networkidle0' });
+    await page.pdf({
+      path: outPath,
+      format: 'A4',
+      printBackground: true,
+      preferCSSPageSize: true,
+      margin: { top: '10mm', right: '10mm', bottom: '12mm', left: '10mm' }
+    });
+  } finally {
+    await browser.close();
+  }
+}
 
-gulp.task('css-min', gulp.series('sass'), () =>{
-  return gulp.src(distPath + '/css/*.css')
-    .pipe(concat('app.min.css'))
-    .pipe(minifyCSS())
-    .pipe(gulp.dest(distPath + '/css'))
-});
+async function pdfEn() {
+  await renderPdfFromTemplate({
+    templatePath: paths.pdfTpl,
+    data: resumeJson,
+    outPath: path.join(distPath, 'resume.pdf'),
+    baseHrefDir: path.resolve(distPath)
+  });
+}
 
-gulp.task('clean', gulp.series('css-min'), function(cb) {
-  del([distPath + '/css/**/*', '!' + distPath + '/css/app.min.css'], cb);
-});
+async function pdfRu() {
+  await renderPdfFromTemplate({
+    templatePath: paths.pdfRuTpl,
+    data: resumeRuJson,
+    outPath: path.join(distPath, 'resume.ru.pdf'),
+    baseHrefDir: path.resolve(distPath)
+  });
+}
 
-gulp.task('js', () =>{
-  return gulp.src('src/js/*.js')
-    .pipe(sourcemaps.init())
-    .pipe(uglify())
-    .pipe(concat('app.min.js'))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest(distPath + '/js'))
-});
+// ---------- Assets ----------
+function webfonts() {
+  // Font Awesome webfonts → build/webfonts
+  return src('node_modules/@fortawesome/fontawesome-free/webfonts/*').pipe(
+    dest(`${distPath}/webfonts`)
+  );
+}
 
-gulp.task('icons', () =>{
-  return gulp.src('src/icons/**')
-    .pipe(gulp.dest(distPath + '/'))
-});
+function icons() {
+  return src(paths.icons).pipe(dest(`${distPath}/`));
+}
+function fonts() {
+  return src(paths.fonts).pipe(dest(`${distPath}/fonts`));
+}
 
-gulp.task('fonts', () =>{
-  return gulp.src('src/fonts/**')
-    .pipe(gulp.dest(distPath + '/fonts'))
-});
+// ---------- Styles ----------
+function styles() {
+  return src(paths.stylesEntry, { allowEmpty: true })
+    .pipe(!isProd ? sourcemaps.init() : through.obj())
+    .pipe(
+      gulpSass
+        .sync({
+          quietDeps: true,
+          // чтобы @use "normalize.css/..." и @use "@fortawesome/..." работали без относительных путей
+          includePaths: ['node_modules']
+        })
+        .on('error', gulpSass.logError)
+    )
+    .pipe(postcss([autoprefixer(), ...(isProd ? [cssnano()] : [])]))
+    .pipe(rename({ basename: 'app', suffix: '.min' }))
+    .pipe(!isProd ? sourcemaps.write('.') : through.obj())
+    .pipe(dest(`${distPath}/css`));
+}
 
-gulp.task('watch', () => {
-  livereload.listen();
-  gulp.watch('src/js/*.js', ['js']);
-  gulp.watch('src/scss/*.scss', ['css']);
-  gulp.watch('src/*.html', ['html']);
-});
+// ---------- Scripts ----------
+function scripts() {
+  return src(paths.js, { allowEmpty: true })
+    .pipe(!isProd ? sourcemaps.init() : through.obj())
+    .pipe(
+      terser().on('error', function (err) {
+        console.error('JS error:', err);
+        this.emit('end');
+      })
+    )
+    .pipe(rename({ basename: 'app', suffix: '.min' }))
+    .pipe(!isProd ? sourcemaps.write('.') : through.obj())
+    .pipe(dest(`${distPath}/js`));
+}
 
-gulp.task('default', gulp.series('html', 'html-ru', 'clean', 'js', 'pdf', 'pdf-ru', 'icons', 'fonts'));
+// ---------- Watch ----------
+function devWatch() {
+  watch([paths.htmlTpl, paths.htmlRuTpl], parallel(html, htmlRu));
+  watch([paths.pdfTpl, paths.pdfRuTpl], parallel(pdfEn, pdfRu));
+  watch(paths.stylesWatch, styles);
+  watch(paths.js, scripts);
+}
+
+// ---------- Pipelines ----------
+const build = series(
+  clean,
+  parallel(html, htmlRu, styles, scripts, webfonts, icons, fonts),
+  parallel(pdfEn, pdfRu)
+);
+const dev = series(build, devWatch);
+
+exports.clean = clean;
+exports.html = html;
+exports['html-ru'] = htmlRu;
+exports.pdf = pdfEn;
+exports['pdf-ru'] = pdfRu;
+exports.styles = styles;
+exports.scripts = scripts;
+exports.webfonts = webfonts;
+exports.icons = icons;
+exports.fonts = fonts;
+exports.build = build;
+exports.dev = dev;
+exports.watch = devWatch;
+exports.default = build;

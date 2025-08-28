@@ -1,7 +1,10 @@
-@import "node_modules/normalize.css/normalize";
-@import "node_modules/font-awesome/scss/variables";
 $fa-font-path: "../fonts";
-@import "node_modules/font-awesome/scss/path";
+
+@use "../../node_modules/normalize.css/normalize.css";
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/_variables" as vars;
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/brands" as brands;
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
 
 ::selection {
     background: yellow;
@@ -115,22 +118,22 @@ header {
             }
             &__github {
                 &:before {
-                    content: $fa-var-github;
+                    content: vars.$var-github;
                 }
             }
             &__bitbucket {
                 &:before {
-                    content: $fa-var-bitbucket;
+                    content: vars.$var-bitbucket;
                 }
             }
             &__linkedin {
                 &:before {
-                    content: $fa-var-linkedin;
+                    content: vars.$var-linkedin;
                 }
             }
             &__stackoverflow {
                 &:before {
-                    content: $fa-var-stack-overflow;
+                    content: vars.$var-stack-overflow;
                 }
             }
         }
@@ -149,13 +152,13 @@ section {
     .about {
         &__title {
             &:before {
-                content: $fa-var-user;
+                content: vars.$var-user;
             }
         }
     }
     .work-experience {
         &__title:before {
-            content: $fa-var-suitcase;
+            content: vars.$var-suitcase;
         }
         &__item {
             font-size: 1rem;
@@ -184,7 +187,7 @@ section {
     }
     .certifications {
         &__title:before {
-            content: $fa-var-certificate;
+            content: vars.$var-certificate;
         }
         &__item {
             margin: 10px 0;
@@ -201,7 +204,7 @@ section {
     }
     .skills {
         &__title:before {
-            content: $fa-var-tasks;
+            content: vars.$var-tasks;
         }
         &__item {
             &__title {
@@ -223,7 +226,7 @@ section {
     }
     .interests {
         &__title:before {
-            content: $fa-var-heart;
+            content: vars.$var-heart;
         }
         &__item {
             &__title {
@@ -245,7 +248,7 @@ section {
     }
     .education {
         &__title:before {
-            content: $fa-var-graduation-cap;
+            content: vars.$var-graduation-cap;
         }
         &__item {
             font-size: 1rem;
