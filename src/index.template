@@ -57,6 +57,17 @@
         </li>
       </ul>
     </div>
+    <div class="header__logo">
+  <picture>
+    <source srcset="img/logo.webp" type="image/webp">
+    <img
+      src="img/logo.png"
+      alt="logo"
+      loading="lazy"
+      width="300" height="300"  <!-- резервирует место, уменьшает layout shift -->
+    />
+  </picture>
+</div>
     <div class="header__profiles">
       <div class="header__profiles__title">profiles</div>
       <ul>
