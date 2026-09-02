@@ -29,7 +29,8 @@ const paths = {
   stylesWatch: 'src/scss/**/*.scss',
   js: 'src/js/**/*.js',
   icons: 'src/icons/**',
-  fonts: 'src/fonts/**'
+  fonts: 'src/fonts/**',
+  images: 'src/img/**'
 };
 
 const resumeJson = require('./src/resume.json');
@@ -138,6 +139,9 @@ function icons() {
 function fonts() {
   return src(paths.fonts).pipe(dest(`${distPath}/fonts`));
 }
+function images() {
+  return src(paths.images, { encoding: false }).pipe(dest(`${distPath}/img`));
+}
 
 // ---------- Styles ----------
 function styles() {
@@ -184,7 +188,7 @@ function devWatch() {
 // ---------- Pipelines ----------
 const build = series(
   clean,
-  parallel(html, htmlRu, styles, scripts, webfonts, icons, fonts),
+  parallel(html, htmlRu, styles, scripts, webfonts, icons, fonts, images),
   parallel(pdfEn, pdfRu)
 );
 const dev = series(build, devWatch);
@@ -199,6 +203,7 @@ exports.scripts = scripts;
 exports.webfonts = webfonts;
 exports.icons = icons;
 exports.fonts = fonts;
+exports.images = images;
 exports.build = build;
 exports.dev = dev;
 exports.watch = devWatch;
