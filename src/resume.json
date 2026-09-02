@@ -6,7 +6,7 @@
         "email": "letter.mansur@gmail.com",
         "telegram": "itismansur",
         "website": "http://mansur.expert",
-        "summary": "Software engineer with 14+ years of experience in backend and frontend development, system design, and infrastructure.<br>Proficient in building and maintaining web applications of varying complexity using diverse technology stacks.<br>Strong experience in infrastructure setup (CI/CD, cloud platforms), and project leadership.<br>Held roles such as Tech Lead, Team Lead, Development Manager, and System Architect.",
+        "summary": "Software engineer with 15+ years of experience in backend and frontend development, system design, and infrastructure.<br>Proficient in building and maintaining web applications of varying complexity using diverse technology stacks.<br>Strong experience in infrastructure setup (CI/CD, cloud platforms), and project leadership.<br>Held roles such as Tech Lead, Team Lead, Development Manager, and System Architect.",
         "profiles": [
             {
                 "network": "Github",
@@ -24,7 +24,7 @@
                 "network": "LinkedIn",
                 "icon": "linkedin",
                 "username": "fattakhov",
-                "url": "https://www.linkedin.com/profile/view?id=AAIAAArAGkoBLXW4CpwkdFauRyWvYjazG9dEQyY&trk=nav_responsive_tab_profile"
+                "url": "https://www.linkedin.com/in/fattakhoff/"
             },
             {
                 "network": "Stackoverflow",
@@ -36,10 +36,27 @@
     },
     "work": [
         {
+            "company": "RioRise",
+            "position": "CTO",
+            "website": "",
+            "startDate": "2025-Apr.",
+            "endDate": "Present",
+            "summary": "CTO of an online gaming company running a fleet of multiplayer game servers.<br>Own platform architecture and infrastructure (Kubernetes, bare-metal fleet), engineering processes, observability and backup systems; lead backend and infrastructure development.",
+            "stack": [
+                "Python3",
+                "MySQL / Postgresql",
+                "k3s / Kubernetes",
+                "Ansible / Helm",
+                "GitLab CI",
+                "Prometheus / Grafana / Sentry",
+                "Team / tech leading"
+            ]
+        },
+        {
             "company": "Samolet",
             "position": "Engineering Team Lead",
             "website": "https://samolet.ru/",
-            "startDate": "2023-Aug.",
+            "startDate": "2024-Feb.",
             "endDate": "2025-Mar.",
             "summary": "Led the development of multiple internal systems for construction business processes. Acted as a technical lead and drove architectural decisions.",
             "stack": [
@@ -206,15 +223,6 @@
             "gpa": "4.5/5"
         }
     ],
-    "publications": [
-        {
-            "name": "Publication",
-            "publisher": "Company",
-            "releaseDate": "2014-10-01",
-            "website": "http://publication.com",
-            "summary": "Description..."
-        }
-    ],
     "skills": [
         {
             "name": "Backend development",
@@ -283,12 +291,6 @@
                 "Reading",
                 "Sports"
             ]
-        }
-    ],
-    "references": [
-        {
-            "name": "Jane Doe",
-            "reference": "Reference..."
         }
     ]
 }
