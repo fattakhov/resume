@@ -36,6 +36,9 @@ const paths = {
 const resumeJson = require('./src/resume.json');
 const resumeRuJson = require('./src/resume.ru.json');
 
+// Кэш-бастер для css/js: обновляется при каждой сборке
+const buildId = Date.now();
+
 // del@7 — ESM only: используем динамический импорт
 async function clean() {
   const { deleteAsync } = await import('del');
@@ -58,7 +61,7 @@ function html() {
     .pipe(
       through.obj((file, _, cb) => {
         const template = file.contents.toString();
-        file.contents = Buffer.from(mustache.render(template, resumeJson));
+        file.contents = Buffer.from(mustache.render(template, { ...resumeJson, buildId }));
         cb(null, file);
       })
     )
@@ -71,7 +74,7 @@ function htmlRu() {
     .pipe(
       through.obj((file, _, cb) => {
         const template = file.contents.toString();
-        file.contents = Buffer.from(mustache.render(template, resumeRuJson));
+        file.contents = Buffer.from(mustache.render(template, { ...resumeRuJson, buildId }));
         cb(null, file);
       })
     )

@@ -12,7 +12,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="icon" type="image/png" href="favicon.ico" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/app.min.css">
+  <link rel="stylesheet" href="css/app.min.css?v={{buildId}}">
 
   <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -151,7 +151,7 @@
   <footer>
   </footer>
 
-  <script src="js/app.min.js"></script>
+  <script src="js/app.min.js?v={{buildId}}"></script>
 </body>
 
 </html>
