@@ -229,39 +229,61 @@
             "name": "Бэкенд разработка",
             "level": "Master",
             "keywords": [
-                "Python",
-                "Kotlin / Java",
+                "Python / Django / FastAPI / Flask",
                 "Golang",
+                "Kotlin / Java",
+                "NodeJS",
                 "Ruby",
-                "NodeJS"
+                "REST / gRPC",
+                "Kafka",
+                "Микросервисная архитектура"
+            ]
+        },
+        {
+            "name": "Базы данных и хранилища",
+            "level": "Master",
+            "keywords": [
+                "PostgreSQL",
+                "MySQL",
+                "ClickHouse",
+                "Cassandra",
+                "Redis"
             ]
         },
         {
             "name": "Фронтэнд разработка",
             "level": "Master",
             "keywords": [
-                "JavaScript",
+                "JavaScript / TypeScript",
                 "React / Redux",
                 "Sass / Less",
-                "Gulp / Grunt / Webpack"
+                "Gulp / Webpack / Vite"
             ]
         },
         {
-            "name": "Cloud платформы",
+            "name": "DevOps и облака",
             "level": "Master",
             "keywords": [
                 "AWS",
-                "Google Cloud Platform"
+                "Google Cloud Platform",
+                "Kubernetes / k3s",
+                "Docker",
+                "Terraform",
+                "Ansible",
+                "GitLab CI / GitHub Actions",
+                "Prometheus / Grafana / Sentry"
             ]
         },
         {
-            "name": "Управление командой",
+            "name": "Управление и процессы",
             "level": "Master",
             "keywords": [
-                "Scrum",
-                "Kanban",
-                "Управление задачами",
-                "Управление командой",
+                "Найм и построение команд",
+                "Техлидство и архитектурные ревью",
+                "Agile / Scrum / Kanban",
+                "Планирование роадмапа и релизов",
+                "Менторинг",
+                "Управление инцидентами",
                 "Коммуникация с клиентами"
             ]
         }

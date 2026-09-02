@@ -228,40 +228,61 @@
             "name": "Backend development",
             "level": "Master",
             "keywords": [
-                "Python",
-                "Kotlin / Java",
+                "Python / Django / FastAPI / Flask",
                 "Golang",
+                "Kotlin / Java",
+                "NodeJS",
                 "Ruby",
-                "NodeJS"
+                "REST / gRPC",
+                "Kafka",
+                "Microservice architecture"
+            ]
+        },
+        {
+            "name": "Databases & storage",
+            "level": "Master",
+            "keywords": [
+                "PostgreSQL",
+                "MySQL",
+                "ClickHouse",
+                "Cassandra",
+                "Redis"
             ]
         },
         {
             "name": "Frontend development",
             "level": "Master",
             "keywords": [
-                "JavaScript",
+                "JavaScript / TypeScript",
                 "React / Redux",
                 "Sass / Less",
-                "Gulp / Grunt / Webpack"
+                "Gulp / Webpack / Vite"
             ]
         },
         {
-            "name": "Cloud development",
+            "name": "DevOps & Cloud",
             "level": "Master",
             "keywords": [
                 "AWS",
                 "Google Cloud Platform",
+                "Kubernetes / k3s",
+                "Docker",
                 "Terraform",
-                "Ansible"
+                "Ansible",
+                "GitLab CI / GitHub Actions",
+                "Prometheus / Grafana / Sentry"
             ]
         },
         {
-            "name": "Team management",
+            "name": "Management & processes",
             "level": "Master",
             "keywords": [
-                "Agile / Kanban / Scrum",
-                "Team / tech leading",
-                "Tasks management",
+                "Team building / hiring",
+                "Tech leadership / architecture reviews",
+                "Agile / Scrum / Kanban",
+                "Roadmap & delivery planning",
+                "Mentoring",
+                "Incident management",
                 "Client communication"
             ]
         }
