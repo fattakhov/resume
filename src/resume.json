@@ -3,7 +3,7 @@
         "name": "Mansur Fattakhov",
         "label": "CTO / IT Solutions Architect / Lead Software Engineer",
         "picture": "",
-        "email": "letter.mansur@gmail.com",
+        "email": "hello@mansur.expert",
         "telegram": "itismansur",
         "website": "http://mansur.expert",
         "summary": "Software engineer with 15+ years of experience in backend and frontend development, system design, and infrastructure.<br>Proficient in building and maintaining web applications of varying complexity using diverse technology stacks.<br>Strong experience in infrastructure setup (CI/CD, cloud platforms), and project leadership.<br>Held roles such as Tech Lead, Team Lead, Development Manager, and System Architect.",
@@ -38,7 +38,7 @@
         {
             "company": "RioRise",
             "position": "CTO",
-            "website": "",
+            "website": "https://riorise.com/en",
             "startDate": "2025-Apr.",
             "endDate": "Present",
             "summary": "CTO of an online gaming company running a fleet of multiplayer game servers.<br>Own platform architecture and infrastructure (Kubernetes, bare-metal fleet), engineering processes, observability and backup systems; lead backend and infrastructure development.",
