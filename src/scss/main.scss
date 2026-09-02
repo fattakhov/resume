@@ -6,22 +6,50 @@ $fa-font-path: "../fonts";
 @use "../../node_modules/@fortawesome/fontawesome-free/scss/brands" as brands;
 @use "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
 
+:root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #111111;
+    --link: #808080;
+    --link-hover-bg: #000000;
+    --link-hover-fg: #ffffff;
+    --tag-bg: #000000;
+    --tag-fg: #ffffff;
+    --border: #808080;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #121212;
+        --fg: #e6e6e6;
+        --link: #a0a0a0;
+        --link-hover-bg: #e6e6e6;
+        --link-hover-fg: #121212;
+        --tag-bg: #e6e6e6;
+        --tag-fg: #121212;
+        --border: #5a5a5a;
+    }
+}
+
 ::selection {
     background: yellow;
+    color: #111111;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     margin-bottom: 50px;
+    background: var(--bg);
+    color: var(--fg);
 }
 
 a {
     &:hover {
-        color: white;
-        background-color: black;
+        color: var(--link-hover-fg);
+        background-color: var(--link-hover-bg);
     }
-    color: gray;
+    color: var(--link);
     text-decoration: none;
 }
 
@@ -62,7 +90,7 @@ h3 {
     padding: 10px;
     bottom: 0;
     right: 0;
-    background: white;
+    background: var(--bg);
 
     @media (max-width: 480px) {
         text-align: center;
@@ -74,6 +102,15 @@ h3 {
 header {
     text-align: center;
     .header {
+        // Лого — чёрное на запечённом белом фоне: multiply убирает белый,
+        // в тёмной теме invert+screen рисует его белым без квадрата
+        &__logo img {
+            mix-blend-mode: multiply;
+            @media (prefers-color-scheme: dark) {
+                filter: invert(1);
+                mix-blend-mode: screen;
+            }
+        }
         &__contacts {
             ul {
                 list-style: none;
@@ -167,7 +204,7 @@ section {
                 font-weight: bold;
 
                 span {
-                    border-top: 1px solid gray;
+                    border-top: 1px solid var(--border);
                     padding-top: 5px;
                 }
             }
@@ -218,8 +255,8 @@ section {
                     display: inline-block;
                     padding: 5px;
                     margin: 1px;
-                    background: black;
-                    color: white;
+                    background: var(--tag-bg);
+                    color: var(--tag-fg);
                 }
             }
         }
@@ -240,8 +277,8 @@ section {
                     display: inline-block;
                     padding: 5px;
                     margin: 1px;
-                    background: black;
-                    color: white;
+                    background: var(--tag-bg);
+                    color: var(--tag-fg);
                 }
             }
         }
