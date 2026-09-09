@@ -30,7 +30,8 @@ const paths = {
   js: 'src/js/**/*.js',
   icons: 'src/icons/**',
   fonts: 'src/fonts/**',
-  images: 'src/img/**'
+  images: 'src/img/**',
+  static: 'src/static/**'
 };
 
 const resumeJson = require('./src/resume.json');
@@ -139,6 +140,10 @@ function webfonts() {
 function icons() {
   return src(paths.icons).pipe(dest(`${distPath}/`));
 }
+function staticFiles() {
+  // robots.txt, sitemap.xml → корень build
+  return src(paths.static).pipe(dest(`${distPath}/`));
+}
 function fonts() {
   return src(paths.fonts).pipe(dest(`${distPath}/fonts`));
 }
@@ -191,7 +196,7 @@ function devWatch() {
 // ---------- Pipelines ----------
 const build = series(
   clean,
-  parallel(html, htmlRu, styles, scripts, webfonts, icons, fonts, images),
+  parallel(html, htmlRu, styles, scripts, webfonts, icons, fonts, images, staticFiles),
   parallel(pdfEn, pdfRu)
 );
 const dev = series(build, devWatch);
@@ -205,6 +210,7 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.webfonts = webfonts;
 exports.icons = icons;
+exports.static = staticFiles;
 exports.fonts = fonts;
 exports.images = images;
 exports.build = build;
