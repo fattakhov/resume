@@ -153,6 +153,11 @@ header {
                     }
                 }
             }
+            &__blog {
+                &:before {
+                    content: vars.$var-blog;
+                }
+            }
             &__github {
                 &:before {
                     content: vars.$var-github;
