@@ -1,12 +1,12 @@
 {
     "basics": {
         "name": "Mansur Fattakhov",
-        "label": "CTO / IT Solutions Architect / Lead Software Engineer",
+        "label": "CTO / Head of Engineering / Solutions Architect",
         "picture": "",
         "email": "hello@mansur.expert",
         "telegram": "itismansur",
         "website": "http://mansur.expert",
-        "summary": "Software engineer with 15+ years of experience in backend and frontend development, system design, and infrastructure.<br>Proficient in building and maintaining web applications of varying complexity using diverse technology stacks.<br>Strong experience in infrastructure setup (CI/CD, cloud platforms), and project leadership.<br>Held roles such as Tech Lead, Team Lead, Development Manager, and System Architect.",
+        "summary": "Engineering leader with 15+ years in software development, 10+ of them in leadership roles: CTO, Head of Development, Engineering Team Lead, System Architect.<br>Built and scaled engineering organizations of up to 6 teams; owned architecture and infrastructure of high-load platforms serving 35,000+ concurrent users on bare-metal and cloud.<br>Strong hands-on background: Python, Go, distributed systems, Kubernetes, observability — able to go deep into design and code when it matters.<br>Focused on building teams, processes, and systems that scale.",
         "profiles": [
             {
                 "network": "Blog",
@@ -46,11 +46,12 @@
             "position": "CTO",
             "website": "https://riorise.com/en",
             "startDate": "2025-Apr.",
-            "endDate": "Present",
-            "summary": "CTO of an online gaming company running a fleet of multiplayer game servers.<br>Own platform architecture and infrastructure (Kubernetes, bare-metal fleet), engineering processes, observability and backup systems; lead backend and infrastructure development.",
+            "endDate": "2026-Sept.",
+            "summary": "CTO of an online gaming company: a fleet of 70 multiplayer game servers on 60 bare-metal nodes serving 35,000+ concurrent players. Led 6 engineering teams (2–6 people each) across backend, infrastructure, and game services.<br>Rebuilt the platform end-to-end: infrastructure, observability, and deployment pipelines from scratch; redesigned the architecture — introduced Kubernetes clusters and Kafka, rewrote core services in Go; shipped new products (in-game store, geolocation and transport services).<br>Results: server fleet and user base doubled during tenure at 99%+ uptime even on the weakest legacy segments; grew the engineering org 1.5–2x.",
             "stack": [
-                "Python3",
+                "Python3 / Golang",
                 "MySQL / Postgresql",
+                "Kafka",
                 "k3s / Kubernetes",
                 "Ansible / Helm",
                 "GitLab CI",
@@ -89,8 +90,10 @@
         },
         {
             "company": "Reddit",
-            "position": "Senior Developer",
+            "position": "Senior Developer (Contract)",
             "website": "https://www.reddit.com/",
+            "startDate": "2021-Sep.",
+            "endDate": "2022-Jul.",
             "summary": "Designed and implemented architecture of 3 key microservices (Python/gRPC/Kubernetes) powering billing and ad automation systems.",
             "stack": [
                 "Python3 / baseplate.py",
@@ -101,8 +104,10 @@
         },
         {
             "company": "AstraZeneca",
-            "position": "System Architect",
+            "position": "System Architect (Contract)",
             "website": "https://www.astrazeneca.com/",
+            "startDate": "2021-Feb.",
+            "endDate": "2021-Dec.",
             "summary": "Designed a computer vision system (Python, OpenCV, TensorFlow) for automated image recognition in lab environments, improving classification accuracy by 35%.",
             "stack": [
                 "Python3",
@@ -112,8 +117,10 @@
         },
         {
             "company": "London Stock Exchange Group (LSEG)",
-            "position": "Lead Software Engineer / Team lead",
+            "position": "Lead Software Engineer / Team lead (Contract)",
             "website": "https://www.lseg.com/",
+            "startDate": "2020-Mar.",
+            "endDate": "2021-Jan.",
             "summary": "Built a financial news processing system integrated with an ML model for currency pair correlation forecasting. Increased prediction accuracy by 30%.",
             "stack": [
                 "Python3 / Flask / FastAPI",
@@ -125,8 +132,10 @@
         },
         {
             "company": "Pearson",
-            "position": "Lead Software Engineer",
+            "position": "Lead Software Engineer (Contract)",
             "website": "https://www.pearson.com/",
+            "startDate": "2019-Mar.",
+            "endDate": "2020-Feb.",
             "summary": "Led the design and development of microservices for Pearson’s AI platform AIDA, launching multiple fault-tolerant and scalable projects.",
             "stack": [
                 "Golang / Gin",
@@ -206,17 +215,17 @@
         {
             "title": "Professional Cloud Architect (Google Cloud Platform)",
             "url": "https://www.credential.net/efd94dc3-a351-4172-8305-cef2ec1053c8?key",
-            "dates": "2020-2022"
+            "dates": "2020-2022 (expired)"
         },
         {
             "title": "AWS Certified Solutions Architect - Associate",
             "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
-            "dates": "2020-2023"
+            "dates": "2020-2023 (expired)"
         },
         {
             "title": "AWS Certified Developer - Associate",
             "url": "https://aws.amazon.com/certification/certified-developer-associate/",
-            "dates": "2020-2023"
+            "dates": "2020-2023 (expired)"
         }
     ],
     "education": [
@@ -296,7 +305,7 @@
     "languages": [
         {
             "language": "English",
-            "fluency": "Advanced"
+            "fluency": "Fluent (C2)"
         },
         {
             "language": "Spanish",
