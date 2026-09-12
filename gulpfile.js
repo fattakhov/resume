@@ -50,6 +50,7 @@ async function clean() {
       `${distPath}/webfonts`,
       `${distPath}/fonts`,
       `${distPath}/index*.html`,
+      `${distPath}/en`,
       `${distPath}/resume*.pdf`
     ],
     { force: true }
@@ -57,6 +58,7 @@ async function clean() {
 }
 
 // ---------- HTML ----------
+// Русская версия — корень сайта, английская — /en/
 function html() {
   return src(paths.htmlTpl)
     .pipe(
@@ -67,7 +69,7 @@ function html() {
       })
     )
     .pipe(rename('index.html'))
-    .pipe(dest(distPath));
+    .pipe(dest(`${distPath}/en`));
 }
 
 function htmlRu() {
@@ -79,7 +81,7 @@ function htmlRu() {
         cb(null, file);
       })
     )
-    .pipe(rename('index.ru.html'))
+    .pipe(rename('index.html'))
     .pipe(dest(distPath));
 }
 

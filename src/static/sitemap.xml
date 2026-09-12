@@ -3,12 +3,12 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mansur.expert/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mansur.expert/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mansur.expert/index.ru.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mansur.expert/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mansur.expert/en/"/>
   </url>
   <url>
-    <loc>https://mansur.expert/index.ru.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mansur.expert/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mansur.expert/index.ru.html"/>
+    <loc>https://mansur.expert/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mansur.expert/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mansur.expert/en/"/>
   </url>
 </urlset>
