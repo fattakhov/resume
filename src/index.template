@@ -44,7 +44,7 @@
         <li>
           <span class="header__contacts__title">email</span>
           <span class="header__contacts__info">
-            <a target='_blank' href="mailto:{{basics.email}}">{{basics.email}}</a>
+            <!--email_off--><a target='_blank' href="mailto:{{basics.email}}">{{basics.email}}</a><!--/email_off-->
           </span>
         </li>
         <li>

@@ -17,3 +17,4 @@ RUN npm run build
 
 FROM nginx:alpine AS runtime-production
 COPY --from=build /src/build /usr/share/nginx/html
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf
