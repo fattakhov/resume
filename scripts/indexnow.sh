@@ -15,8 +15,7 @@ host=${base#https://}
 
 # С ретраями: сразу после выката край сети может ещё отвечать прежней версией
 fetch() {
-  local i
-  for i in 1 2 3 4 5; do
+  for _ in 1 2 3 4 5; do
     curl -fsS -m 30 "$1" && return 0
     sleep 5
   done
