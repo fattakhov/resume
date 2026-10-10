@@ -38,3 +38,9 @@ jobs:
           printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           ssh -o StrictHostKeyChecking=accept-new deploy@38.44.98.165 'sudo /usr/local/bin/deploy-app.sh resume'
+
+      # Яндексу и Bing — адреса из sitemap после выката (rules/seo.md в ai-assist).
+      # Ключ отдаёт caddy на /indexnow-key.txt, скрипт берёт его с живого сайта.
+      - uses: actions/checkout@v7
+      - name: IndexNow
+        run: scripts/indexnow.sh https://mansur.expert
