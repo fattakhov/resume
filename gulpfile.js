@@ -134,20 +134,22 @@ async function pdfRu() {
 // ---------- Assets ----------
 function webfonts() {
   // Font Awesome webfonts → build/webfonts
-  return src('node_modules/@fortawesome/fontawesome-free/webfonts/*').pipe(
+  return src('node_modules/@fortawesome/fontawesome-free/webfonts/*', { encoding: false }).pipe(
     dest(`${distPath}/webfonts`)
   );
 }
 
+// Gulp 5 по умолчанию читает файлы как UTF-8 и портит бинарники —
+// иконкам и шрифтам нужен encoding: false, как картинкам
 function icons() {
-  return src(paths.icons).pipe(dest(`${distPath}/`));
+  return src(paths.icons, { encoding: false }).pipe(dest(`${distPath}/`));
 }
 function staticFiles() {
   // robots.txt, sitemap.xml → корень build
   return src(paths.static).pipe(dest(`${distPath}/`));
 }
 function fonts() {
-  return src(paths.fonts).pipe(dest(`${distPath}/fonts`));
+  return src(paths.fonts, { encoding: false }).pipe(dest(`${distPath}/fonts`));
 }
 function images() {
   return src(paths.images, { encoding: false }).pipe(dest(`${distPath}/img`));
