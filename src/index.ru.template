@@ -13,7 +13,8 @@
   <link rel="alternate" hreflang="ru" href="https://mansur.expert/">
   <link rel="alternate" hreflang="en" href="https://mansur.expert/en/">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" type="image/png" href="/favicon.ico" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-120x120.png" sizes="120x120">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/css/app.min.css?v={{buildId}}">
 
