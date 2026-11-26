@@ -56,7 +56,7 @@
         <li>
           <span class="header__contacts__title">Телеграм</span>
           <span class="header__contacts__info">
-            <a target='_blank' href="https://telegram.me/{{basics.telegram}}">{{basics.telegram}}</a>
+            <a target='_blank' href="https://t.me/{{basics.telegram}}">{{basics.telegram}}</a>
           </span>
         </li>
       </ul>
@@ -69,13 +69,14 @@
           <a target='_blank' href="{{url}}">{{network}}</a>
         </li>
         {{/basics.profiles}}
+        <li><a href="/resume.ru.pdf">PDF · RU</a> · <a href="/resume.pdf">PDF · EN</a></li>
         <li class="header__profiles__lang">
           <a href="/en/">English version</a>
         </li>
       </ul>
     </div>
   </header>
-  <a class="download-resume" href="/resume.ru.pdf">Вы можете скачать это резюме</a>
+  <a class="download-resume" href="/resume.ru.pdf">Скачать резюме PDF · RU</a>
   <section class="about">
     <h3 class="about__title">Обо мне</h3>
     <p>{{&basics.summary}}</p>
@@ -88,7 +89,7 @@
           <span>
             {{position}},
             {{#website}}<a target='_blank' href="{{website}}">{{company}}</a>{{/website}}
-            {{^website}}<span style="color:grey;">{{company}}</span>{{/website}}
+            {{^website}}<span>{{company}}</span>{{/website}}
           </span>
         </div>
         <div class="work-experience__item__dates">
@@ -107,6 +108,7 @@
       </div>
     {{/work}}
   </section>
+  {{#certifications.length}}
   <section class="certifications">
     <h3 class="certifications__title">Сертификаты</h3>
     {{#certifications}}
@@ -116,6 +118,7 @@
     </div>
     {{/certifications}}
   </section>
+  {{/certifications.length}}
   <section class="skills">
     <h3 class="skills__title">Навыки</h3>
     <div class="skills__item">
@@ -129,6 +132,12 @@
       {{/skills}}
     </div>
   </section>
+  {{#languages.length}}
+  <section class="languages">
+    <h3>Языки</h3>
+    {{#languages}}<p>{{language}}: {{fluency}}</p>{{/languages}}
+  </section>
+  {{/languages.length}}
   <section class="education">
     <h3 class="education__title">Образование</h3>
     {{#education}}

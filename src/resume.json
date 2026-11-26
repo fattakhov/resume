@@ -1,42 +1,24 @@
 {
     "basics": {
         "name": "Mansur Fattakhov",
-        "label": "CTO / Head of Engineering / Solutions Architect",
+        "label": "CTO / Head of Engineering",
         "picture": "",
         "email": "hello@mansur.expert",
         "telegram": "itismansur",
-        "website": "http://mansur.expert",
-        "summary": "Engineering leader with 15+ years in software development, 10+ of them in leadership roles: CTO, Head of Development, Engineering Team Lead, System Architect.<br>Built and scaled engineering organizations of up to 6 teams; owned architecture and infrastructure of high-load platforms serving 35,000+ concurrent users on bare-metal and cloud.<br>Strong hands-on background: Python, Go, distributed systems, Kubernetes, observability — able to go deep into design and code when it matters.<br>Focused on building teams, processes, and systems that scale.",
+        "website": "https://mansur.expert",
+        "summary": "CTO and engineering leader with 15+ years of engineering experience. I lead engineering across multiple teams, covering people, architecture, priorities and product delivery.<br><br>Led six engineering teams with up to 30 direct reports. Hired and developed engineers and team leads, and made staffing decisions. At RioRise, I was responsible for a platform serving 35,000+ concurrent users; at Dengi Vpered, I built three development teams and owned engineering for two core products.<br><br>I remain hands-on: I develop Python backend services, work with Go and distributed systems, and contribute to system design and code reviews. I adapt the balance between management and development to business needs.",
         "profiles": [
             {
-                "network": "Blog",
-                "icon": "blog",
-                "username": "mind.mansur.expert",
-                "url": "https://mind.mansur.expert"
-            },
-            {
-                "network": "Github",
+                "network": "GitHub",
                 "icon": "github",
                 "username": "fattakhov",
                 "url": "https://github.com/fattakhov"
-            },
-            {
-                "network": "Bitbucket",
-                "icon": "bitbucket",
-                "username": "mfattakhov",
-                "url": "https://bitbucket.org/mfattakhov"
             },
             {
                 "network": "LinkedIn",
                 "icon": "linkedin",
                 "username": "fattakhov",
                 "url": "https://www.linkedin.com/in/fattakhoff/"
-            },
-            {
-                "network": "Stackoverflow",
-                "icon": "stackoverflow",
-                "username": "mansur-fattakhov",
-                "url": "https://stackoverflow.com/users/1697919/mansur-fattakhov"
             }
         ]
     },
@@ -44,285 +26,170 @@
         {
             "company": "RioRise",
             "position": "CTO",
-            "website": "https://riorise.com/en",
-            "startDate": "2025-Apr.",
-            "endDate": "2026-Sept.",
-            "summary": "CTO of an online gaming company: a fleet of 70 multiplayer game servers on 60 bare-metal nodes serving 35,000+ concurrent players. Led 6 engineering teams (2–6 people each) across backend, infrastructure, and game services.<br>Rebuilt the platform end-to-end: infrastructure, observability, and deployment pipelines from scratch; redesigned the architecture — introduced Kubernetes clusters and Kafka, rewrote core services in Go; shipped new products (in-game store, geolocation and transport services).<br>Results: server fleet and user base doubled during tenure at 99%+ uptime even on the weakest legacy segments; grew the engineering org 1.5–2x.",
+            "website": "https://riorise.com/",
+            "startDate": "04.2025",
+            "endDate": "09.2026",
+            "summary": "Responsible for engineering and technical development of an online gaming platform serving 35,000+ concurrent users. Led six engineering teams across backend, game services and infrastructure, with up to 30 direct reports.<br><br><strong>Team leadership and engineering delivery.</strong> Hired and developed engineers and team leads, and made staffing decisions. Established planning, task breakdown, technical coordination across teams and release processes. Combined management with architecture and hands-on development.<br><br><strong>Architecture and platform development.</strong> Led backend modernization and migration of key services to Go. Together with the teams, introduced Kubernetes, CI/CD and observability with Prometheus, Grafana and Sentry. Launched products and services including the store, geolocation and transport services.<br><br><strong>Hands-on development.</strong> Built the entire game store backend using Python, Django, Django Ninja and Celery: catalog, orders, balances, season pass, payment integrations and webhooks. Developed platform services using FastAPI. Wrote a user event ingestion service handling approximately 8,000 events per second through Redpanda and Vector into ClickHouse.<br><br><strong>Scale and results.</strong> During my tenure, the audience and game server fleet doubled, while engineering headcount grew by 1.5–2 times. The platform ran on 70 game servers and 60 bare-metal nodes.",
             "stack": [
-                "Python3 / Golang",
-                "MySQL / Postgresql",
-                "Kafka",
-                "k3s / Kubernetes",
-                "Ansible / Helm",
+                "Python / Django / Django Ninja / FastAPI / Celery",
+                "Go",
+                "PostgreSQL / MySQL / Redis / ClickHouse",
+                "Kafka / Redpanda / Vector",
+                "Kubernetes / k3s / Ansible / Helm",
                 "GitLab CI",
-                "Prometheus / Grafana / Sentry",
-                "Team / tech leading"
+                "Prometheus / Grafana / Sentry"
             ]
         },
         {
             "company": "Samolet",
             "position": "Engineering Team Lead",
             "website": "https://samolet.ru/",
-            "startDate": "2024-Feb.",
-            "endDate": "2025-Mar.",
-            "summary": "Led the development of multiple internal systems for construction business processes. Acted as a technical lead and drove architectural decisions.",
+            "startDate": "02.2024",
+            "endDate": "03.2025",
+            "summary": "Led development of several internal systems for construction operations tracking and business process automation. As technical lead, owned backend architecture using Python, Django, FastAPI and PostgreSQL.<br><br><strong>Reason for leaving.</strong> Following a department reduction, the company offered a similar role in another division. I chose new challenges outside the company rather than an internal transfer.",
             "stack": [
-                "Python3 / Django / FastAPI",
-                "Postgresql",
+                "Python / Django / FastAPI",
+                "PostgreSQL",
                 "Docker",
-                "Tech leading"
+                "Technical leadership"
             ]
         },
         {
             "company": "Dengi Vpered",
-            "position": "Head of development",
+            "position": "Head of Engineering",
             "website": "https://dengi-vpered.ru/",
-            "startDate": "2022-Aug.",
-            "endDate": "2024-Jan.",
-            "summary": "Owned full development lifecycle of two core B2C products: planning, architecture, implementation, and team management.<br>Built MVP from scratch using Django/FastAPI, formed and trained 3 internal teams (3–4 devs each), and implemented CI/CD and Agile workflows.",
+            "startDate": "08.2022",
+            "endDate": "01.2024",
+            "summary": "Owned end-to-end engineering for two core products: planning, architecture, teams and releases.<br><br><strong>Teams and processes.</strong> Built and trained three in-house teams of 3–4 developers each. Established development planning and workflows, and introduced CI/CD and Agile practices.<br><br><strong>Architecture and hands-on development.</strong> Designed product architecture and wrote key backend code using Python, Django and FastAPI.<br><br><strong>Result.</strong> Together with the teams, built a B2C MVP from scratch in a few months.<br><br><strong>Reason for leaving.</strong> Left following a reduction in product development.",
             "stack": [
-                "Python3 / Django / FastAPI",
-                "Postgresql / Clickhouse",
+                "Python / Django / FastAPI",
+                "PostgreSQL / ClickHouse",
                 "Docker",
-                "Team / tech leading",
-                "Microservice architecture design"
+                "Technical leadership",
+                "System architecture",
+                "Microservices"
             ]
         },
         {
-            "company": "Reddit",
-            "position": "Senior Developer (Contract)",
-            "website": "https://www.reddit.com/",
-            "startDate": "2021-Sep.",
-            "endDate": "2022-Jul.",
-            "summary": "Designed and implemented architecture of 3 key microservices (Python/gRPC/Kubernetes) powering billing and ad automation systems.",
+            "company": "International client projects",
+            "position": "Senior Software Engineer / Technical Lead",
+            "website": "",
+            "startDate": "2018",
+            "endDate": "2022",
+            "summary": "Project work for international clients through a contractor. Worked on backend services, integrations and distributed system architecture.<br><br><strong>DoorDash:</strong> restaurant partner integrations, menu and order synchronization, gateways and microservices using Python and Kotlin.<br><strong>Pearson:</strong> designed and developed microservices for the AIDA learning platform using Python and Go.<br><strong>LSEG:</strong> financial news processing system using Python and AWS, including integration of a currency pair analysis model.<br><strong>AstraZeneca:</strong> architecture of a computer vision system for image recognition in a laboratory environment.<br><strong>Reddit:</strong> designed and implemented three microservices for billing and advertising automation using Python, gRPC and Kubernetes.",
             "stack": [
-                "Python3 / baseplate.py",
-                "Postgresql / Cassandra",
-                "Docker",
-                "k8s"
-            ]
-        },
-        {
-            "company": "AstraZeneca",
-            "position": "System Architect (Contract)",
-            "website": "https://www.astrazeneca.com/",
-            "startDate": "2021-Feb.",
-            "endDate": "2021-Dec.",
-            "summary": "Designed a computer vision system (Python, OpenCV, TensorFlow) for automated image recognition in lab environments, improving classification accuracy by 35%.",
-            "stack": [
-                "Python3",
-                "AWS",
-                "Docker"
-            ]
-        },
-        {
-            "company": "London Stock Exchange Group (LSEG)",
-            "position": "Lead Software Engineer / Team lead (Contract)",
-            "website": "https://www.lseg.com/",
-            "startDate": "2020-Mar.",
-            "endDate": "2021-Jan.",
-            "summary": "Built a financial news processing system integrated with an ML model for currency pair correlation forecasting. Increased prediction accuracy by 30%.",
-            "stack": [
-                "Python3 / Flask / FastAPI",
-                "AWS Lambda",
-                "Amazon Sagemaker",
-                "Terraform",
-                "Docker"
-            ]
-        },
-        {
-            "company": "Pearson",
-            "position": "Lead Software Engineer (Contract)",
-            "website": "https://www.pearson.com/",
-            "startDate": "2019-Mar.",
-            "endDate": "2020-Feb.",
-            "summary": "Led the design and development of microservices for Pearson’s AI platform AIDA, launching multiple fault-tolerant and scalable projects.",
-            "stack": [
-                "Golang / Gin",
-                "Python3 / Flask / Django",
-                "Google Cloud Platform",
-                "Terraform",
-                "Docker"
-            ]
-        },
-        {
-            "company": "DoorDash Inc.",
-            "position": "Senior Developer",
-            "website": "https://www.doordash.com/",
-            "startDate": "2018-Feb.",
-            "endDate": "2021-Aug.",
-            "summary": "Developed and launched integrations with external partners (REST APIs, XML/JSON) to sync restaurant menus and orders.<br>Built internal gateways and supported microservices architecture. Enabled 3x order growth over 2 years without SLA degradation.",
-            "stack": [
-                "Python3 / Flask / Django",
+                "Python / Django / Flask / FastAPI",
+                "Go / Gin",
                 "Kotlin / Micronaut",
-                "Docker",
-                "K8S",
-                "Kafka",
-                "REST",
-                "GRPC",
-                "Cadence",
-                "AWS"
+                "PostgreSQL / MySQL / Cassandra",
+                "REST / gRPC / Kafka",
+                "Docker / Kubernetes",
+                "AWS / Google Cloud / Terraform"
             ]
         },
         {
             "company": "Tensor",
-            "position": "Lead Fullstack Developer",
+            "position": "Senior Software Engineer / Full-stack Developer",
             "website": "https://tensor.ru/",
-            "startDate": "2016-Nov.",
-            "endDate": "2018-Feb.",
-            "summary": "Led development of key modules for SBIS digital signature system (Python), ensuring security and platform stability.<br>Migrated codebase to a new corporate platform, improving system performance and scalability.",
+            "startDate": "11.2016",
+            "endDate": "02.2018",
+            "summary": "Led development of core electronic signature modules in SBIS using Python. Migrated the codebase to a new corporate platform and worked on module performance, stability and ongoing development.",
             "stack": [
-                "Python3",
-                "SQL / Postgresql",
-                "JavaScript",
-                "Team management"
+                "Python",
+                "PostgreSQL / SQL",
+                "JavaScript"
             ]
         },
         {
             "company": "ITS Digital agency",
             "position": "CTO",
             "website": "",
-            "startDate": "2014-Jan.",
-            "endDate": "2016-Sep.",
-            "summary": "Managed custom development studio with 15+ engineers. Set up planning, design, and development processes; led technical architecture and client communication.",
+            "startDate": "01.2014",
+            "endDate": "09.2016",
+            "summary": "Led a custom software development agency with a team of 15+ developers. Established planning and engineering processes, owned technical architecture and managed client relationships.",
             "stack": [
-                "RubyOnRails",
-                "Python3",
-                "PHP",
-                "Sass",
-                "Gulp / Grunt / Webpack",
-                "BackboneJS",
-                "Angular",
-                "Ansible / VPS hosting management",
-                "Development team management"
+                "Python / Ruby on Rails / PHP",
+                "JavaScript",
+                "Ansible"
             ]
         },
         {
             "company": "BARS Group",
-            "position": "Developer / Team lead",
+            "position": "Software Engineer / Team Lead",
             "website": "https://bars.group",
-            "startDate": "2011-Sep.",
-            "endDate": "2014-Jan.",
-            "summary": "Promoted from Developer to Lead, taking ownership of the “BARS Veterinary” enterprise product.<br>Optimized codebase (Python/Django, ExtJS), reducing response time by 30% and simplifying modular implementation.",
+            "startDate": "09.2011",
+            "endDate": "01.2014",
+            "summary": "Progressed from developer to lead and took charge of development and maintenance of the BARS Veterinary product. Developed the Python/Django backend, optimized code and response times, and made it easier to add new functionality.",
             "stack": [
-                "Python2 / Django",
-                "JavaScript / ExtJS",
-                "SQL / Postgresql"
+                "Python / Django",
+                "PostgreSQL",
+                "JavaScript / ExtJS"
             ]
         }
     ],
-    "certifications": [
-        {
-            "title": "Professional Cloud Architect (Google Cloud Platform)",
-            "url": "https://www.credential.net/efd94dc3-a351-4172-8305-cef2ec1053c8?key",
-            "dates": "2020-2022 (expired)"
-        },
-        {
-            "title": "AWS Certified Solutions Architect - Associate",
-            "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
-            "dates": "2020-2023 (expired)"
-        },
-        {
-            "title": "AWS Certified Developer - Associate",
-            "url": "https://aws.amazon.com/certification/certified-developer-associate/",
-            "dates": "2020-2023 (expired)"
-        }
-    ],
+    "certifications": [],
     "education": [
         {
-            "institution": "Kazan State University",
-            "area": "Computational mathematics and cybernetics",
-            "studyType": "Specialist",
-            "startDate": "2007-01-01",
-            "endDate": "2012-01-01",
+            "institution": "Kazan Federal University",
+            "area": "Computational Mathematics and Cybernetics",
+            "studyType": "Specialist degree",
+            "startDate": "2007",
+            "endDate": "2012",
             "gpa": "4.5/5"
         }
     ],
     "skills": [
         {
+            "name": "Engineering leadership",
+            "keywords": [
+                "Leading multiple teams and developing team leads",
+                "Hiring, development and performance evaluation",
+                "Planning and prioritization",
+                "Roadmaps and product delivery",
+                "Technical leadership and architecture reviews",
+                "Scrum / Kanban"
+            ]
+        },
+        {
             "name": "Backend development",
-            "level": "Master",
             "keywords": [
-                "Python / Django / FastAPI / Flask",
-                "Golang",
-                "Kotlin / Java",
-                "NodeJS",
-                "Ruby",
-                "REST / gRPC",
-                "Kafka",
-                "Microservice architecture"
+                "Python / Django / Django Ninja / FastAPI / Flask",
+                "Celery",
+                "Go",
+                "REST / gRPC"
             ]
         },
         {
-            "name": "Databases & storage",
-            "level": "Master",
+            "name": "Data and event systems",
             "keywords": [
-                "PostgreSQL",
-                "MySQL",
+                "PostgreSQL / MySQL",
+                "Redis",
                 "ClickHouse",
-                "Cassandra",
-                "Redis"
+                "Kafka / Redpanda / Vector"
             ]
         },
         {
-            "name": "Frontend development",
-            "level": "Master",
+            "name": "Architecture, reliability and delivery",
             "keywords": [
-                "JavaScript / TypeScript",
-                "React / Redux",
-                "Sass / Less",
-                "Gulp / Webpack / Vite"
-            ]
-        },
-        {
-            "name": "DevOps & Cloud",
-            "level": "Master",
-            "keywords": [
-                "AWS",
-                "Google Cloud Platform",
-                "Kubernetes / k3s",
-                "Docker",
-                "Terraform",
-                "Ansible",
+                "Distributed systems and microservices",
+                "API contracts and service integrations",
+                "Docker / Kubernetes / k3s",
                 "GitLab CI / GitHub Actions",
-                "Prometheus / Grafana / Sentry"
-            ]
-        },
-        {
-            "name": "Management & processes",
-            "level": "Master",
-            "keywords": [
-                "Team building / hiring",
-                "Tech leadership / architecture reviews",
-                "Agile / Scrum / Kanban",
-                "Roadmap & delivery planning",
-                "Mentoring",
-                "Incident management",
-                "Client communication"
+                "Prometheus / Grafana / Sentry",
+                "AWS / Google Cloud",
+                "Ansible / Helm / Terraform"
             ]
         }
     ],
     "languages": [
         {
             "language": "English",
-            "fluency": "Fluent (C2)"
-        },
-        {
-            "language": "Spanish",
-            "fluency": "Novice"
-        },
-        {
-            "language": "Turkish",
-            "fluency": "Advanced"
-        },
-        {
-            "language": "Georgian",
-            "fluency": "Novice"
+            "fluency": "C2, proficient"
         }
     ],
     "interests": [
         {
-            "name": "Self-development",
+            "name": "Personal development",
             "keywords": [
                 "Reading",
                 "Sports"

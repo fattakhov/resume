@@ -4,15 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{basics.name}}`s resume</title>
+  <title>{{basics.name}} — Resume</title>
   <meta name="description" content="Mansur Fattakhov — CTO, engineering leader and systems architect. 15+ years of experience in backend development, infrastructure and engineering teams.">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link rel="canonical" href="https://mansur.expert/en/">
   <link rel="alternate" hreflang="ru" href="https://mansur.expert/">
   <link rel="alternate" hreflang="en" href="https://mansur.expert/en/">
-
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" type="image/png" href="/favicon-120x120.png" sizes="120x120">
@@ -57,7 +56,7 @@
         <li>
           <span class="header__contacts__title">telegram</span>
           <span class="header__contacts__info">
-            <a target='_blank' href="https://telegram.me/{{basics.telegram}}">{{basics.telegram}}</a>
+            <a target='_blank' href="https://t.me/{{basics.telegram}}">{{basics.telegram}}</a>
           </span>
         </li>
       </ul>
@@ -70,26 +69,27 @@
           <a target='_blank' href="{{url}}">{{network}}</a>
         </li>
         {{/basics.profiles}}
+        <li><a href="/resume.ru.pdf">PDF · RU</a> · <a href="/resume.pdf">PDF · EN</a></li>
         <li class="header__profiles__lang">
           <a href="/">Русская версия</a>
         </li>
       </ul>
     </div>
   </header>
-  <a class="download-resume" href="/resume.pdf">You can download this resume, if you need it</a>
+  <a class="download-resume" href="/resume.pdf">Download resume PDF · EN</a>
   <section class="about">
     <h3 class="about__title">About</h3>
     <p>{{&basics.summary}}</p>
   </section>
   <section class="work-experience">
-    <h3 class="work-experience__title">Work Experience</h3>
+    <h3 class="work-experience__title">Work experience</h3>
     {{#work}}
       <div class="work-experience__item">
         <div class="work-experience__item__title">
           <span>
             {{position}},
             {{#website}}<a target='_blank' href="{{website}}">{{company}}</a>{{/website}}
-            {{^website}}<span style="color:grey;">{{company}}</span>{{/website}}
+            {{^website}}<span>{{company}}</span>{{/website}}
           </span>
         </div>
         <div class="work-experience__item__dates">
@@ -98,7 +98,7 @@
         </div>
         <div class="work-experience__item__description">{{&summary}}</div>
         <div class="work-experience__item__stack">
-          <span>Stack</span>
+          <span>Technologies</span>
           <ul>
             {{#stack}}
               <li>{{.}}</li>
@@ -108,6 +108,7 @@
       </div>
     {{/work}}
   </section>
+  {{#certifications.length}}
   <section class="certifications">
     <h3 class="certifications__title">Certifications</h3>
     {{#certifications}}
@@ -117,6 +118,7 @@
     </div>
     {{/certifications}}
   </section>
+  {{/certifications.length}}
   <section class="skills">
     <h3 class="skills__title">Skills</h3>
     <div class="skills__item">
@@ -130,6 +132,12 @@
       {{/skills}}
     </div>
   </section>
+  {{#languages.length}}
+  <section class="languages">
+    <h3>Languages</h3>
+    {{#languages}}<p>{{language}}: {{fluency}}</p>{{/languages}}
+  </section>
+  {{/languages.length}}
   <section class="education">
     <h3 class="education__title">Education</h3>
     {{#education}}
@@ -140,7 +148,7 @@
     </div>
     {{/education}}
   </section>
-  <section class="Interests">
+  <section class="interests">
     <h3 class="interests__title">Interests</h3>
     <div class="interests__item">
       {{#interests}}
