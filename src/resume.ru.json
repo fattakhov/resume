@@ -1,42 +1,24 @@
 {
     "basics": {
         "name": "Мансур Фаттахов",
-        "label": "CTO / Руководитель разработки / Архитектор",
+        "label": "CTO / Руководитель разработки",
         "picture": "",
         "email": "hello@mansur.expert",
         "telegram": "itismansur",
-        "website": "http://mansur.expert",
-        "summary": "Инженерный руководитель с 15+ годами опыта в разработке, из них 10+ — на руководящих ролях: CTO, руководитель разработки, тимлид, системный архитектор.<br>Строил и масштабировал инженерные организации до 6 команд; отвечал за архитектуру и инфраструктуру высоконагруженных платформ (35 000+ одновременных пользователей, bare-metal и облака).<br>Сильная инженерная база: Python, Go, распределённые системы, Kubernetes, observability — при необходимости погружаюсь в проектирование и код.<br>Фокус — построение команд, процессов и систем, которые масштабируются.",
+        "website": "https://mansur.expert",
+        "summary": "CTO и руководитель разработки с 15+ годами инженерного опыта. Организую разработку на уровне нескольких команд: люди, архитектура, приоритеты и выпуск продуктов.<br><br>Руководил шестью инженерными командами; до 30 сотрудников в прямом подчинении. Нанимал и развивал инженеров и лидов, принимал кадровые решения. В RioRise отвечал за платформу с 35 000+ одновременными пользователями; в «Деньги Вперёд» сформировал три команды разработки и отвечал за два основных продукта.<br><br>Сохраняю инженерную глубину: лично разрабатываю backend на Python, работаю с Go и распределёнными системами, участвую в проектировании и ревью. Соотношение управления и разработки выбираю под задачи бизнеса.",
         "profiles": [
             {
-                "network": "Блог",
-                "icon": "blog",
-                "username": "mind.mansur.expert",
-                "url": "https://mind.mansur.expert"
-            },
-            {
-                "network": "Github",
+                "network": "GitHub",
                 "icon": "github",
                 "username": "fattakhov",
                 "url": "https://github.com/fattakhov"
-            },
-            {
-                "network": "Bitbucket",
-                "icon": "bitbucket",
-                "username": "mfattakhov",
-                "url": "https://bitbucket.org/mfattakhov"
             },
             {
                 "network": "LinkedIn",
                 "icon": "linkedin",
                 "username": "fattakhov",
                 "url": "https://www.linkedin.com/in/fattakhoff/"
-            },
-            {
-                "network": "Stackoverflow",
-                "icon": "stackoverflow",
-                "username": "mansur-fattakhov",
-                "url": "https://stackoverflow.com/users/1697919/mansur-fattakhov"
             }
         ]
     },
@@ -45,280 +27,164 @@
             "company": "RioRise",
             "position": "CTO",
             "website": "https://riorise.com/",
-            "startDate": "2025-Apr.",
-            "endDate": "2026-Sept.",
-            "summary": "CTO онлайн-игровой компании: парк из 70 мультиплеерных игровых серверов на 60 bare-metal нодах, 35 000+ игроков одновременно. Руководил 6 инженерными командами (по 2–6 человек): backend, инфраструктура, игровые сервисы.<br>Перестроил платформу целиком: инфраструктура, мониторинг и деплой с нуля; серьёзно переработана архитектура — внедрены Kubernetes-кластеры и Kafka, ключевые сервисы переписаны на Go; запущены новые продукты (внутриигровой магазин, сервисы геолокации и транспорта).<br>Результаты: парк серверов и аудитория выросли в 2 раза при uptime 99%+ даже на самых слабых легаси-участках; инженерный штат вырос в 1,5–2 раза.",
+            "startDate": "04.2025",
+            "endDate": "09.2026",
+            "summary": "Отвечал за разработку и техническое развитие онлайн-игровой платформы с 35 000+ одновременными пользователями. Руководил шестью инженерными командами: backend, игровые сервисы и инфраструктура; до 30 сотрудников в прямом подчинении.<br><br><strong>Управление командами и организация разработки.</strong> Нанимал и развивал инженеров и лидов, принимал кадровые решения. Выстраивал планирование, декомпозицию, техническое взаимодействие команд и выпуск изменений. Совмещал управление с архитектурой и личной разработкой.<br><br><strong>Архитектура и развитие платформы.</strong> Руководил модернизацией backend и переходом ключевых сервисов на Go. Вместе с командами внедрил Kubernetes, CI/CD и наблюдаемость на Prometheus, Grafana и Sentry. Запускали новые продукты и сервисы, включая магазин, геолокацию и транспортные сервисы.<br><br><strong>Личная разработка.</strong> Полностью написал backend игрового магазина на Python/Django/Django Ninja/Celery: каталог, заказы, балансы, сезонный пропуск, платёжные интеграции и обработку вебхуков. Развивал FastAPI-сервисы платформы. Написал сервис импорта пользовательских событий; поток около 8 000 событий/с проходил через Redpanda и Vector в ClickHouse.<br><br><strong>Масштаб и результаты.</strong> За период работы аудитория и парк игровых серверов выросли вдвое, инженерный штат — в 1,5–2 раза. Платформа работала на 70 игровых серверах и 60 bare-metal узлах.",
             "stack": [
-                "Python3 / Golang",
-                "MySQL / Postgresql",
-                "Kafka",
-                "k3s / Kubernetes",
-                "Ansible / Helm",
+                "Python / Django / Django Ninja / FastAPI / Celery",
+                "Go",
+                "PostgreSQL / MySQL / Redis / ClickHouse",
+                "Kafka / Redpanda / Vector",
+                "Kubernetes / k3s / Ansible / Helm",
                 "GitLab CI",
-                "Prometheus / Grafana / Sentry",
-                "Team / tech leading"
+                "Prometheus / Grafana / Sentry"
             ]
         },
         {
             "company": "Самолет",
             "position": "Руководитель группы разработки",
             "website": "https://samolet.ru/",
-            "startDate": "2024-Feb.",
-            "endDate": "2025-Mar.",
-            "summary": "В компании Самолет я в качестве тех.лида занимался разработкой нескольких систем внутреннего учета бизнес процессов строительства.",
+            "startDate": "02.2024",
+            "endDate": "03.2025",
+            "summary": "Руководил разработкой нескольких внутренних систем учёта и автоматизации бизнес-процессов строительства. В роли технического лидера отвечал за архитектуру backend-систем на Python/Django/FastAPI и PostgreSQL.<br><br><strong>Причина перехода.</strong> После сокращения отдела компания предложила аналогичную роль в другом подразделении. Выбрал новые задачи за пределами компании вместо внутреннего перехода.",
             "stack": [
-                "Python3 / Django / FastAPI",
-                "Postgresql",
+                "Python / Django / FastAPI",
+                "PostgreSQL",
                 "Docker",
-                "Tech leading"
+                "Техническое лидерство"
             ]
         },
         {
-            "company": "Деньги вперед",
+            "company": "Деньги Вперёд",
             "position": "Руководитель разработки",
             "website": "https://dengi-vpered.ru/",
-            "startDate": "2022-Aug.",
-            "endDate": "2024-Jan.",
-            "summary": "Отвечал за полный цикл разработки двух основных проектов компании, включая планирование, архитектуру, команду и релизы. Проектировал архитектуру, писал ключевой backend-код (Python/Django/FastAPI), сформировал и обучил 3 внутренние команды по 3-4 разработчика, внедрил CI/CD и Agile-процессы. За несколько месяцев был разработан MVP-проект с нуля для b2c пользователей.",
+            "startDate": "08.2022",
+            "endDate": "01.2024",
+            "summary": "Отвечал за полный цикл разработки двух основных продуктов компании: планирование, архитектуру, команды и релизы.<br><br><strong>Команды и процессы.</strong> Сформировал и обучил три внутренние команды по 3–4 разработчика. Выстроил планирование и организацию разработки, внедрил CI/CD и Agile-практики.<br><br><strong>Архитектура и личная разработка.</strong> Проектировал архитектуру продуктов и писал ключевой backend-код на Python/Django/FastAPI.<br><br><strong>Результат.</strong> Вместе с командами разработали с нуля MVP для B2C-пользователей за несколько месяцев.<br><br><strong>Причина перехода.</strong> Ушёл из компании в связи с сокращением разработки.",
             "stack": [
-                "Python3 / Django / FastAPI",
-                "Postgresql / Clickhouse",
+                "Python / Django / FastAPI",
+                "PostgreSQL / ClickHouse",
                 "Docker",
-                "Team / tech leading",
+                "Техническое лидерство",
                 "Разработка архитектуры проекта",
                 "Микросервисная архитектура"
             ]
         },
         {
-            "company": "Reddit",
-            "position": "Ведущий разработчик (контракт)",
-            "website": "https://www.reddit.com/",
-            "startDate": "2021-Sep.",
-            "endDate": "2022-Jul.",
-            "summary": "Проектировал и реализовывал архитектуру из 3х микросервисов (Python/gRPC/k8s) отвечающих за ключевые функции платформы биллинга. Совместно с командой запустили реализовали много бизнес функционала и автоматизировали запуск рекламы на платформе.",
+            "company": "Международные клиентские проекты",
+            "position": "Ведущий разработчик / технический лидер",
+            "website": "",
+            "startDate": "2018",
+            "endDate": "2022",
+            "summary": "Проектная разработка через подрядчика для международных клиентов. Работал над backend-сервисами, интеграциями и архитектурой распределённых систем.<br><br><strong>DoorDash:</strong> интеграции ресторанных партнёров, синхронизация меню и заказов, шлюзы и микросервисы на Python и Kotlin.<br><strong>Pearson:</strong> проектирование и разработка микросервисов образовательной платформы AIDA на Python и Go.<br><strong>LSEG:</strong> система обработки финансовых новостей на Python и AWS, интеграция модели анализа валютных пар.<br><strong>AstraZeneca:</strong> архитектура системы компьютерного зрения для распознавания изображений в лабораторной среде.<br><strong>Reddit:</strong> проектирование и реализация трёх микросервисов платформы биллинга и автоматизации рекламы на Python/gRPC/Kubernetes.",
             "stack": [
-                "Python3 / baseplate.py",
-                "Postgresql / Cassandra",
-                "Docker",
-                "k8s"
-            ]
-        },
-        {
-            "company": "AstraZeneca",
-            "position": "Системный архитектор (контракт)",
-            "website": "https://www.astrazeneca.com/",
-            "startDate": "2021-Feb.",
-            "endDate": "2021-Dec.",
-            "summary": "Разработал архитектуру системы компьютерного зрения (Python, OpenCV, TensorFlow) для автоматического распознования изображений в лабораторной среде, повысив точность классификации на 35%",
-            "stack": [
-                "Python3",
-                "AWS",
-                "Docker"
-            ]
-        },
-        {
-            "company": "London Stock Exchange Group (LSEG)",
-            "position": "Team/tech lead разработчик (контракт)",
-            "website": "https://www.lseg.com/",
-            "startDate": "2020-Mar.",
-            "endDate": "2021-Jan.",
-            "summary": "Разработал систему обработки финансовых новостей (Python, AWS), интегрировал ML-модель прогнозирования валютных пар, повысив точность корреляционного анализа на 30%",
-            "stack": [
-                "Python3 / Flask / FastAPI",
-                "AWS Lambda",
-                "Amazon Sagemaker",
-                "Terraform",
-                "Docker"
-            ]
-        },
-        {
-            "company": "Pearson",
-            "position": "Ведущий разработчик (контракт)",
-            "website": "https://www.pearson.com/",
-            "startDate": "2019-Mar.",
-            "endDate": "2020-Feb.",
-            "summary": "В качестве ведущего разработчика я работал над проектированием и разработкой группы микросервисов, обеспечивающих работу AI платформы Pearson под названием AIDA.<br>В результате нашей работы было запущено несколько масштабных проектов с высокой отказоустойчивостью и возможностью дальнейшего масштабирования.",
-            "stack": [
-                "Golang / Gin",
-                "Python3 / Flask / Django",
-                "Google Cloud Platform",
-                "Terraform",
-                "Docker"
-            ]
-        },
-        {
-            "company": "DoorDash Inc.",
-            "position": "Ведущий разработчик",
-            "website": "https://www.doordash.com/",
-            "startDate": "2018-Feb.",
-            "endDate": "2021-Aug.",
-            "summary": "Разработал и внедрил интеграции с внешними партнерами (REST API, XML/JSON) для автоматизированной передачи заказов и меню в рестораны и обратно.<br>Создал собственные шлюзы интеграции и обеспечил поддержку микросервисной архитектуры (Python, Flask, gRPC, Kotlin).<br>Проект выдержал рост количества заказов в 3 раза за 2 года без ухудшения SLA, благодаря масштабируемым решениям и мониторингу.",
-            "stack": [
-                "Python3 / Flask / Django",
+                "Python / Django / Flask / FastAPI",
+                "Go / Gin",
                 "Kotlin / Micronaut",
-                "Docker",
-                "K8S",
-                "Kafka",
-                "REST",
-                "GRPC",
-                "Cadence",
-                "AWS"
+                "PostgreSQL / MySQL / Cassandra",
+                "REST / gRPC / Kafka",
+                "Docker / Kubernetes",
+                "AWS / Google Cloud / Terraform"
             ]
         },
         {
             "company": "Tensor",
             "position": "Ведущий разработчик / Fullstack разработчик",
             "website": "https://tensor.ru/",
-            "startDate": "2016-Nov.",
-            "endDate": "2018-Feb.",
-            "summary": "Руководил разработкой ключевых модулей системы электронных подписей (Python) в рамках проекта СБИС, обеспечив соответствие требованиям безопасности и стабильности.<br>Перевел кодовую базу на новую корпоративную платформу, что улучшило производительность и упростило масштабирования приложения.",
+            "startDate": "11.2016",
+            "endDate": "02.2018",
+            "summary": "Руководил разработкой ключевых модулей электронной подписи в СБИС на Python. Перевёл кодовую базу на новую корпоративную платформу, работал над производительностью, стабильностью и дальнейшим развитием модулей.",
             "stack": [
-                "Python3",
-                "SQL / Postgresql",
-                "JavaScript",
-                "Team management"
+                "Python",
+                "PostgreSQL / SQL",
+                "JavaScript"
             ]
         },
         {
             "company": "ITS Digital agency",
             "position": "CTO",
             "website": "",
-            "startDate": "2014-Jan.",
-            "endDate": "2016-Sep.",
-            "summary": "Руководил разработкой в студии заказной разработки. Настроил процессы планирования, дизайна и реализации информационных систем; занимался взаимодействием с клиентами и командой, состоящей из 15+ разработчиков.",
+            "startDate": "01.2014",
+            "endDate": "09.2016",
+            "summary": "Руководил студией заказной разработки с командой из 15+ разработчиков. Выстроил планирование и процессы разработки, отвечал за техническую архитектуру и взаимодействие с клиентами.",
             "stack": [
-                "RubyOnRails",
-                "Python3",
-                "PHP",
-                "Sass",
-                "Gulp / Grunt / Webpack",
-                "BackboneJS",
-                "Angular",
-                "Ansible / VPS хостинг мэнеджмент",
-                "Управление командой"
+                "Python / Ruby on Rails / PHP",
+                "JavaScript",
+                "Ansible"
             ]
         },
         {
             "company": "BARS Group",
-            "position": "Developer / Team lead",
+            "position": "Разработчик / тимлид",
             "website": "https://bars.group",
-            "startDate": "2011-Sep.",
-            "endDate": "2014-Jan.",
-            "summary": "Продвинулся с позиции разработчика до ведущего, возглавив разработку и поддержку корпоративного продукта (БАРС Ветеринария), используещего стек Python/Django, PostgreSQL, ExtJS.<br>Оптимизировал кодовую базу, что позволило снизить время отклика на 30% и упростило внедрение нового функционала.",
+            "startDate": "09.2011",
+            "endDate": "01.2014",
+            "summary": "Вырос от разработчика до ведущего и возглавил разработку и поддержку продукта «БАРС Ветеринария». Развивал backend на Python/Django, оптимизировал код и время отклика системы, упрощал добавление новой функциональности.",
             "stack": [
-                "Python2 / Django",
-                "JavaScript / ExtJS",
-                "SQL / Postgresql"
+                "Python / Django",
+                "PostgreSQL",
+                "JavaScript / ExtJS"
             ]
         }
     ],
-    "certifications": [
-        {
-            "title": "Professional Cloud Architect (Google Cloud Platform)",
-            "url": "https://www.credential.net/efd94dc3-a351-4172-8305-cef2ec1053c8?key",
-            "dates": "2020-2022 (истёк)"
-        },
-        {
-            "title": "AWS Certified Solutions Architect - Associate",
-            "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
-            "dates": "2020-2023 (истёк)"
-        },
-        {
-            "title": "AWS Certified Developer - Associate",
-            "url": "https://aws.amazon.com/certification/certified-developer-associate/",
-            "dates": "2020-2023 (истёк)"
-        }
-    ],
+    "certifications": [],
     "education": [
         {
             "institution": "Казанский Федеральный Университет",
             "area": "Факультет вычислительной математики и кибернетики",
             "studyType": "Специалист",
-            "startDate": "2007-01-01",
-            "endDate": "2012-01-01",
+            "startDate": "2007",
+            "endDate": "2012",
             "gpa": "4.5/5"
         }
     ],
     "skills": [
         {
-            "name": "Бэкенд разработка",
-            "level": "Master",
+            "name": "Руководство разработкой",
             "keywords": [
-                "Python / Django / FastAPI / Flask",
-                "Golang",
-                "Kotlin / Java",
-                "NodeJS",
-                "Ruby",
-                "REST / gRPC",
-                "Kafka",
-                "Микросервисная архитектура"
+                "Управление несколькими командами и развитие лидов",
+                "Найм, развитие и оценка сотрудников",
+                "Планирование и приоритизация",
+                "Roadmap и выпуск продуктов",
+                "Техническое лидерство и архитектурные ревью",
+                "Scrum / Kanban"
             ]
         },
         {
-            "name": "Базы данных и хранилища",
-            "level": "Master",
+            "name": "Backend-разработка",
             "keywords": [
-                "PostgreSQL",
-                "MySQL",
+                "Python / Django / Django Ninja / FastAPI / Flask",
+                "Celery",
+                "Go",
+                "REST / gRPC"
+            ]
+        },
+        {
+            "name": "Данные и событийные системы",
+            "keywords": [
+                "PostgreSQL / MySQL",
+                "Redis",
                 "ClickHouse",
-                "Cassandra",
-                "Redis"
+                "Kafka / Redpanda / Vector"
             ]
         },
         {
-            "name": "Фронтэнд разработка",
-            "level": "Master",
+            "name": "Архитектура, надёжность и поставка",
             "keywords": [
-                "JavaScript / TypeScript",
-                "React / Redux",
-                "Sass / Less",
-                "Gulp / Webpack / Vite"
-            ]
-        },
-        {
-            "name": "DevOps и облака",
-            "level": "Master",
-            "keywords": [
-                "AWS",
-                "Google Cloud Platform",
-                "Kubernetes / k3s",
-                "Docker",
-                "Terraform",
-                "Ansible",
+                "Распределённые системы и микросервисы",
+                "API-контракты и межсервисные интеграции",
+                "Docker / Kubernetes / k3s",
                 "GitLab CI / GitHub Actions",
-                "Prometheus / Grafana / Sentry"
-            ]
-        },
-        {
-            "name": "Управление и процессы",
-            "level": "Master",
-            "keywords": [
-                "Найм и построение команд",
-                "Техлидство и архитектурные ревью",
-                "Agile / Scrum / Kanban",
-                "Планирование роадмапа и релизов",
-                "Менторинг",
-                "Управление инцидентами",
-                "Коммуникация с клиентами"
+                "Prometheus / Grafana / Sentry",
+                "AWS / Google Cloud",
+                "Ansible / Helm / Terraform"
             ]
         }
     ],
     "languages": [
         {
-            "language": "English",
-            "fluency": "Свободный (C2)"
-        },
-        {
-            "language": "Spanish",
-            "fluency": "Начинающий"
-        },
-        {
-            "language": "Turkish",
-            "fluency": "Продвинутый"
-        },
-        {
-            "language": "Georgian",
-            "fluency": "Начинающий"
+            "language": "Английский",
+            "fluency": "C2, свободное владение"
         }
     ],
     "interests": [

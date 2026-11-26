@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -12,186 +12,36 @@
   <link rel="manifest" href="site.webmanifest">
 
   <style>
-    ::selection {
-      background: yellow;
-    }
-
-    body {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 12px;
-      margin-bottom: 25px;
-    }
-
-    a {
-      color: gray;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: white;
-      background-color: black;
-    }
-
-    h1,
-    h2,
-    h3 {
-      text-transform: uppercase;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0;
-    }
-
-    h2 {
-      font-size: 0.8rem;
-      margin-top: 0.3rem;
-      margin-bottom: 1.5rem;
-    }
-
-    h3 {
-      font-size: 0.8rem;
-    }
-
-    header .header__contacts ul {
-      list-style: none;
-      padding-left: 0;
-      margin-bottom: 1rem;
-    }
-
-    header .header__contacts ul>li {
-      font-size: 0.6rem;
-    }
-
-    header .header__contacts__title {
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-
-    header .header__contacts__title:after {
-      content: '•';
-      margin-left: 2.5px;
-    }
-
-    header .header__profiles__title {
-      text-transform: uppercase;
-      font-size: 0.6rem;
-      margin-bottom: 1rem;
-      font-weight: bold;
-    }
-
-    header .header__profiles ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    header .header__profiles ul>li {
-      font-size: 0.6rem;
-    }
-
-    section {
-      margin: 0;
-    }
-
-    section h3:before {
-      margin-right: 5px;
-      font-family: FontAwesome, serif;
-    }
-
-    section p {
-      font-size: 0.5rem;
-    }
-
-    section .about__title {
-      font-size: 0.8rem;
-    }
-
-
-    section .work-experience__item {
-      font-size: 0.5rem;
-    }
-
-    section .work-experience__item__title {
-      font-size: 0.6rem;
-      font-weight: bold;
-    }
-
-    section .work-experience__item__dates {
-      font-size: 0.5rem;
-      font-weight: bold;
-    }
-
-    section .work-experience__item__description {
-      margin: 10px 0;
-    }
-
-    section .work-experience__item__stack span {
-      font-weight: bold;
-    }
-
-    section .certifications__item {
-      margin: 5px 0;
-      font-weight: bold;
-    }
-
-    section .certifications__item__title a {
-      font-size: 0.6rem;
-    }
-
-    section .certifications__item__dates {
-      font-size: 0.5rem;
-    }
-
-    section .skills__item__title {
-      font-size: 0.5rem;
-      font-weight: bold;
-    }
-
-    section .skills__item ul {
-      padding-left: 0;
-      list-style: none;
-    }
-
-    section .skills__item ul li {
-      display: inline-block;
-      padding: 2.5px;
-      background: black;
-      color: white;
-      font-size: 0.5rem;
-      margin-top: 2px;
-    }
-
-    section .interests__item__title {
-      font-size: 0.5rem;
-      font-weight: bold;
-    }
-
-    section .interests__item ul {
-      padding-left: 0;
-      list-style: none;
-    }
-
-    section .interests__item ul li {
-      display: inline-block;
-      padding: 2.5px;
-      background: black;
-      color: white;
-      font-size: 0.5rem;
-      margin-top: 2px;
-    }
-
-    section .education__item {
-      font-size: 0.5rem;
-      font-weight: bold;
-    }
-
-    section .education__item__title {
-      font-size: 0.6rem;
-    }
-
-    section .education__item__dates {
-      font-size: 0.5rem;
-    }
+    @page { size: A4; margin: 10mm; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Montserrat', sans-serif; font-size: 9pt; line-height: 1.13; color: #202020; }
+    a { color: inherit; text-decoration: none; }
+    header { padding: 3mm 0 7pt; margin-bottom: 9pt; border-bottom: 0.6pt solid #d5d5d5; }
+    h1 { margin: 0 0 4pt; font-size: 23pt; line-height: 1; text-transform: uppercase; }
+    h2 { margin: 0 0 9pt; font-size: 10.5pt; }
+    .header__links { display: flex; flex-wrap: wrap; gap: 6pt 16pt; margin: 0; padding: 0; list-style: none; font-size: 8.5pt; }
+    .header__links + .header__links { margin-top: 6pt; }
+    .header__links a { white-space: nowrap; text-decoration: underline; text-decoration-color: #aaa; text-underline-offset: 2pt; }
+    h3 { margin: 10pt 0 5pt; font-size: 11.5pt; text-transform: uppercase; break-after: avoid; }
+    .about p { margin: 0; }
+    .work-experience__item { margin: 0 0 10pt; break-inside: avoid; }
+    .work-experience__item__title, .education__item__title { font-size: 10pt; font-weight: 700; }
+    .work-experience__item__dates { margin-top: 2pt; font-size: 8pt; color: #666; }
+    .work-experience__item__description { margin: 5pt 0; }
+    .work-experience__item__stack { font-size: 8pt; line-height: 1.15; color: #555; }
+    .work-experience__item__stack span { font-weight: 700; }
+    .work-experience__item__stack ul { display: inline; padding: 0; margin: 0; list-style: none; }
+    .work-experience__item__stack li { display: inline; }
+    .work-experience__item__stack li:not(:last-child)::after { content: '; '; }
+    .skills__item__title { margin-top: 7pt; font-weight: 700; }
+    .skills__item ul { margin: 3pt 0 6pt; padding: 0; list-style: none; }
+    .skills__item ul li { display: inline; }
+    .skills__item ul li:not(:last-child)::after { content: '; '; }
+    .work-experience__item:nth-of-type(4) { break-before: page; padding-top: 10mm; }
+    .education__item { break-inside: avoid; }
+    .education__item__dates, .education__item__gpa { margin-top: 3pt; font-size: 8pt; color: #555; }
+    .languages p { margin: 0; }
+    .interests { display: none; }
   </style>
 </head>
 
@@ -199,38 +49,16 @@
   <header>
     <h1>{{basics.name}}</h1>
     <h2>{{basics.label}}</h2>
-    <div class="header__contacts">
-      <ul>
-        <li>
-          <span class="header__contacts__title">Почта</span>
-          <span class="header__contacts__info">
-            <a target='_blank' href="mailto:{{basics.email}}">{{basics.email}}</a>
-          </span>
-        </li>
-        <li>
-          <span class="header__contacts__title">Вебсайт</span>
-          <span class="header__contacts__info">
-            <a target='_blank' href="{{basics.website}}">{{basics.website}}</a>
-          </span>
-        </li>
-        <li>
-          <span class="header__contacts__title">Телеграм</span>
-          <span class="header__contacts__info">
-            <a target='_blank' href="https://telegram.me/{{basics.telegram}}">{{basics.telegram}}</a>
-          </span>
-        </li>
-      </ul>
-    </div>
-    <div class="header__profiles">
-      <div class="header__profiles__title">страницы</div>
-      <ul>
-        {{#basics.profiles}}
-        <li class="header__profiles__{{icon}}">
-          <a target='_blank' href="{{url}}">{{network}}</a>
-        </li>
-        {{/basics.profiles}}
-      </ul>
-    </div>
+    <ul class="header__links">
+      <li><a href="mailto:{{basics.email}}">{{basics.email}}</a></li>
+      <li><a href="{{basics.website}}">mansur.expert</a></li>
+      <li><a href="https://t.me/{{basics.telegram}}">Telegram: @{{basics.telegram}}</a></li>
+    </ul>
+    <ul class="header__links">
+      {{#basics.profiles}}
+      <li><a href="{{url}}">{{network}}</a></li>
+      {{/basics.profiles}}
+    </ul>
   </header>
   <section class="about">
     <h3 class="about__title">Обо мне</h3>
@@ -242,7 +70,7 @@
       <div class="work-experience__item">
         <div class="work-experience__item__title">{{position}},
           {{#website}}<a target='_blank' href="{{website}}">{{company}}</a>{{/website}}
-          {{^website}}<span style="color:grey;">{{company}}</span>{{/website}}
+          {{^website}}<span>{{company}}</span>{{/website}}
         </div>
         <div class="work-experience__item__dates">
           {{startDate}}
@@ -260,6 +88,7 @@
       </div>
     {{/work}}
   </section>
+  {{#certifications.length}}
   <section class="certifications">
     <h3 class="certifications__title">Сертификаты</h3>
     {{#certifications}}
@@ -269,6 +98,7 @@
     </div>
     {{/certifications}}
   </section>
+  {{/certifications.length}}
   <section class="skills">
     <h3 class="skills__title">Навыки</h3>
     <div class="skills__item">
@@ -282,6 +112,12 @@
       {{/skills}}
     </div>
   </section>
+  {{#languages.length}}
+  <section class="languages">
+    <h3>Языки</h3>
+    {{#languages}}<p>{{language}}: {{fluency}}</p>{{/languages}}
+  </section>
+  {{/languages.length}}
   <section class="education">
     <h3 class="education__title">Образование</h3>
     {{#education}}
